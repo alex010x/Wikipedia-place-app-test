@@ -13,7 +13,15 @@ struct AddCustomLocationUseCase: AddCustomLocationUseCaseProtocol {
         self.repository = repository
     }
     
-    func addCustomLocation(_ location: Location) async {
-        await repository.addCustomLocation(location)
+    func addCustomLocation(
+        name: String?,
+        latitude: Double,
+        longitude: Double
+    ) async {
+        await repository.addCustomLocation(
+            Location(name: name,
+                     latitude: latitude,
+                     longitude: longitude)
+        )
     }
 }

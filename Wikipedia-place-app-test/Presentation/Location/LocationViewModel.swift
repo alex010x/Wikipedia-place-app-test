@@ -8,6 +8,7 @@
 import Foundation
 import Combine
 
+@MainActor
 final class LocationViewModel: ObservableObject {
     
     // MARK: - View State
@@ -29,7 +30,6 @@ final class LocationViewModel: ObservableObject {
         self.fetchLocationsUseCase = fetchLocationsUseCase
     }
     
-    @MainActor
     func fetchLocations() async {
         do {
             locations = try await fetchLocationsUseCase.getLocations()

@@ -6,5 +6,9 @@
 //
 
 protocol AddCustomLocationUseCaseProtocol {
-    func addCustomLocation(_ location: Location) async
+    func addCustomLocation(
+        name: String?,
+        latitude: Double,
+        longitude: Double
+    ) async
 }

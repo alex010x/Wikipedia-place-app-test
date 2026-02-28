@@ -10,7 +10,8 @@ import SwiftUI
 struct LocationCoordinator: View {
     @State private var isAddingLocation = false
     @State private var navigationPath = NavigationPath()
-
+    @StateObject private var viewModel: LocationViewModel
+    
     private let fetchLocationUseCase: FetchLocationsUseCaseProtocol
     private let addCustomLocationUseCase: AddCustomLocationUseCaseProtocol
     
@@ -20,6 +21,8 @@ struct LocationCoordinator: View {
     ) {
         self.fetchLocationUseCase = fetchLocationUseCase
         self.addCustomLocationUseCase = addCustomLocationUseCase
+        self._viewModel = StateObject(wrappedValue: LocationViewModel(fetchLocationsUseCase: fetchLocationUseCase))
+
     }
     
     var body: some View {
@@ -30,9 +33,7 @@ struct LocationCoordinator: View {
     
     private var locationView: some View {
         LocationView(
-            viewModel: LocationViewModel(
-                fetchLocationsUseCase: fetchLocationUseCase
-            )
+            viewModel: viewModel
         )
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
@@ -47,7 +48,14 @@ struct LocationCoordinator: View {
             }
         }
         .sheet(isPresented: $isAddingLocation) {
-            CustomLocationView(viewModel: CustomLocationViewModel(useCase: addCustomLocationUseCase))
+            CustomLocationView(viewModel: CustomLocationViewModel(
+                useCase: addCustomLocationUseCase,
+                onAddNewLocation: {
+                    Task {
+                        await viewModel.fetchLocations()
+                    }
+                }
+            ))
         }
     }
 }
