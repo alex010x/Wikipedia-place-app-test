@@ -40,20 +40,39 @@
 /// 
 struct LocationRepository: LocationRepositoryProtocol {
     
-    let networkService: NetworkServiceProtocol
+    private let networkService: NetworkServiceProtocol
+    private let customLocationCache: any CustomCacheProtocol<LocationDTO>
     
     init(
-        networkService: NetworkServiceProtocol
+        networkService: NetworkServiceProtocol,
+        customLocationCache: any CustomCacheProtocol<LocationDTO>
     ) {
         self.networkService = networkService
+        self.customLocationCache = customLocationCache
     }
     
     func fetchAll() async throws -> [Location] {
-        let dto: LocationResponseDTO = try await networkService
+        let responseDTO: LocationResponseDTO = try await networkService
             .networkManager
             .router
             .request(endpoint: LocationEndpoint.pageLocation)
         
-        return dto.locations.map { Location(from: $0) }
+        let fetchedLocations = responseDTO.locations.map { Location(from: $0) }
+        
+        // retrieve cached data
+        let cachedDTO: [LocationDTO] = await customLocationCache.retrieveAll()
+        let cachedLocations = cachedDTO.map { Location(from: $0) }
+        
+        return fetchedLocations + cachedLocations
+    }
+    
+    func addCustomLocation(_ location: Location) async {
+        await customLocationCache.addElement(
+            LocationDTO(
+                name: location.name,
+                latitude: location.latitude,
+                longitude: location.longitude
+            )
+        )
     }
 }

@@ -10,12 +10,6 @@ import SwiftUI
 struct LocationView: View {
     
     @ObservedObject var viewModel: LocationViewModel
-
-    init(
-        viewModel: LocationViewModel
-    ) {
-        self.viewModel = viewModel
-    }
     
     var body: some View {
         Group {

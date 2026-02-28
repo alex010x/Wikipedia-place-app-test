@@ -26,8 +26,11 @@
 /// Decoding behavior:
 /// - Uses `CodingKeys` to map `latitude` from `"lat"` and `longitude` from `"long"`.
 /// - `name` is optional and will be `nil` if the key is missing or its value is `null`.
-/// 
-struct LocationDTO: Decodable {
+///
+
+protocol DTOProtocol: Decodable {}
+
+struct LocationDTO: DTOProtocol {
     let name: String?
     let latitude: Double
     let longitude: Double
