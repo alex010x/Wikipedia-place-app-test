@@ -53,6 +53,9 @@ struct LocationView: View {
                 .accessibilityHint(viewModel.getAccessibilityHint(for: location))
             }
         }
+        .refreshable {
+            await viewModel.fetchLocations()
+        }
     }
     
     private func makeErrorView(for error: Error) -> some View {
