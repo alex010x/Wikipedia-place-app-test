@@ -15,6 +15,6 @@ struct NetworkServiceFactory {
             configuration: .default
         )
         let networkManager = NetworkManager(router: networkRouter)
-        return NetworkService(networkManager: networkManager, router: networkRouter)
+        return NetworkService(networkManager: networkManager)
     }
 }
