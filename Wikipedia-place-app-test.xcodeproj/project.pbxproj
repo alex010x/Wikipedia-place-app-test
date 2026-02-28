@@ -6,6 +6,37 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		863B19962F50F5B2002922E0 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B198C2F50F5B2002922E0 /* AppConfig.swift */; };
+		863B19972F50F5B2002922E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19922F50F5B2002922E0 /* ContentView.swift */; };
+		863B19982F50F5B2002922E0 /* Wikipedia_place_app_testApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19942F50F5B2002922E0 /* Wikipedia_place_app_testApp.swift */; };
+		863B19992F50F5B2002922E0 /* Config-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 863B198D2F50F5B2002922E0 /* Config-Debug.xcconfig */; };
+		863B199A2F50F5B2002922E0 /* Config-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 863B198E2F50F5B2002922E0 /* Config-Release.xcconfig */; };
+		863B199B2F50F5B2002922E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 863B19912F50F5B2002922E0 /* Assets.xcassets */; };
+		863B199F2F50F5C0002922E0 /* Wikipedia_place_app_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B199D2F50F5C0002922E0 /* Wikipedia_place_app_testTests.swift */; };
+		863B19A32F50F5C4002922E0 /* Wikipedia_place_app_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19A02F50F5C4002922E0 /* Wikipedia_place_app_testUITests.swift */; };
+		863B19A42F50F5C4002922E0 /* Wikipedia_place_app_testUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19A12F50F5C4002922E0 /* Wikipedia_place_app_testUITestsLaunchTests.swift */; };
+		863B19A62F50F605002922E0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19A52F50F5E2002922E0 /* NetworkService.swift */; };
+		863B19A82F50F621002922E0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19A72F50F61E002922E0 /* NetworkManager.swift */; };
+		863B19AA2F50F698002922E0 /* NetworkServiceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19A92F50F693002922E0 /* NetworkServiceConfiguration.swift */; };
+		863B19AC2F50F710002922E0 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19AB2F50F70E002922E0 /* RouterProtocol.swift */; };
+		863B19AE2F50F79C002922E0 /* NetworkServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19AD2F50F795002922E0 /* NetworkServiceFactory.swift */; };
+		863B19B02F50F824002922E0 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19AF2F50F821002922E0 /* NetworkRouter.swift */; };
+		863B19B22F50F93A002922E0 /* APIEndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19B12F50F936002922E0 /* APIEndpointProtocol.swift */; };
+		863B19B42F50F972002922E0 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19B32F50F970002922E0 /* HTTPMethod.swift */; };
+		863B19B82F50FBFC002922E0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19B72F50FBF9002922E0 /* NetworkError.swift */; };
+		863D332D2F52DD1000C49DD1 /* URLOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D332C2F52DCFC00C49DD1 /* URLOpener.swift */; };
+		863D33312F52E28200C49DD1 /* LocationResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33302F52E25C00C49DD1 /* LocationResponseDTO.swift */; };
+		863D33332F52E29800C49DD1 /* LocationDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33322F52E29500C49DD1 /* LocationDTO.swift */; };
+		863D33372F52E33900C49DD1 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33362F52E33700C49DD1 /* Location.swift */; };
+		863D333A2F52E55600C49DD1 /* LocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33392F52E55000C49DD1 /* LocationRepository.swift */; };
+		863D333D2F52E58300C49DD1 /* LocationRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D333C2F52E57F00C49DD1 /* LocationRepositoryProtocol.swift */; };
+		863D333F2F52E67C00C49DD1 /* LocationEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D333E2F52E67900C49DD1 /* LocationEndpoint.swift */; };
+		863D33422F52E95600C49DD1 /* APIPrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33412F52E95300C49DD1 /* APIPrefix.swift */; };
+		863D33452F52EB4700C49DD1 /* FetchLocationsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33442F52EB3B00C49DD1 /* FetchLocationsUseCase.swift */; };
+		863D33482F52EB6B00C49DD1 /* FetchLocationsUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33472F52EB6600C49DD1 /* FetchLocationsUseCaseProtocol.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		863B18FD2F50EBDE002922E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,25 +58,36 @@
 		863B18EF2F50EBDD002922E0 /* Wikipedia-place-app-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wikipedia-place-app-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		863B18FC2F50EBDE002922E0 /* Wikipedia-place-app-testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wikipedia-place-app-testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		863B19062F50EBDE002922E0 /* Wikipedia-place-app-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wikipedia-place-app-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		863B198C2F50F5B2002922E0 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		863B198D2F50F5B2002922E0 /* Config-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Debug.xcconfig"; sourceTree = "<group>"; };
+		863B198E2F50F5B2002922E0 /* Config-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Release.xcconfig"; sourceTree = "<group>"; };
+		863B19912F50F5B2002922E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		863B19922F50F5B2002922E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		863B19932F50F5B2002922E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		863B19942F50F5B2002922E0 /* Wikipedia_place_app_testApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wikipedia_place_app_testApp.swift; sourceTree = "<group>"; };
+		863B199D2F50F5C0002922E0 /* Wikipedia_place_app_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wikipedia_place_app_testTests.swift; sourceTree = "<group>"; };
+		863B19A02F50F5C4002922E0 /* Wikipedia_place_app_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wikipedia_place_app_testUITests.swift; sourceTree = "<group>"; };
+		863B19A12F50F5C4002922E0 /* Wikipedia_place_app_testUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wikipedia_place_app_testUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		863B19A52F50F5E2002922E0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		863B19A72F50F61E002922E0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		863B19A92F50F693002922E0 /* NetworkServiceConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceConfiguration.swift; sourceTree = "<group>"; };
+		863B19AB2F50F70E002922E0 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		863B19AD2F50F795002922E0 /* NetworkServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceFactory.swift; sourceTree = "<group>"; };
+		863B19AF2F50F821002922E0 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		863B19B12F50F936002922E0 /* APIEndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpointProtocol.swift; sourceTree = "<group>"; };
+		863B19B32F50F970002922E0 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		863B19B72F50FBF9002922E0 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		863D332C2F52DCFC00C49DD1 /* URLOpener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLOpener.swift; sourceTree = "<group>"; };
+		863D33302F52E25C00C49DD1 /* LocationResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationResponseDTO.swift; sourceTree = "<group>"; };
+		863D33322F52E29500C49DD1 /* LocationDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDTO.swift; sourceTree = "<group>"; };
+		863D33362F52E33700C49DD1 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		863D33392F52E55000C49DD1 /* LocationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepository.swift; sourceTree = "<group>"; };
+		863D333C2F52E57F00C49DD1 /* LocationRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepositoryProtocol.swift; sourceTree = "<group>"; };
+		863D333E2F52E67900C49DD1 /* LocationEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationEndpoint.swift; sourceTree = "<group>"; };
+		863D33412F52E95300C49DD1 /* APIPrefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPrefix.swift; sourceTree = "<group>"; };
+		863D33442F52EB3B00C49DD1 /* FetchLocationsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchLocationsUseCase.swift; sourceTree = "<group>"; };
+		863D33472F52EB6600C49DD1 /* FetchLocationsUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchLocationsUseCaseProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		863B18F12F50EBDD002922E0 /* Wikipedia-place-app-test */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Wikipedia-place-app-test";
-			sourceTree = "<group>";
-		};
-		863B18FF2F50EBDE002922E0 /* Wikipedia-place-app-testTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Wikipedia-place-app-testTests";
-			sourceTree = "<group>";
-		};
-		863B19092F50EBDE002922E0 /* Wikipedia-place-app-testUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Wikipedia-place-app-testUITests";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		863B18EC2F50EBDD002922E0 /* Frameworks */ = {
@@ -75,9 +117,9 @@
 		863B18E62F50EBDD002922E0 = {
 			isa = PBXGroup;
 			children = (
-				863B18F12F50EBDD002922E0 /* Wikipedia-place-app-test */,
-				863B18FF2F50EBDE002922E0 /* Wikipedia-place-app-testTests */,
-				863B19092F50EBDE002922E0 /* Wikipedia-place-app-testUITests */,
+				863B19952F50F5B2002922E0 /* Wikipedia-place-app-test */,
+				863B199E2F50F5C0002922E0 /* Wikipedia-place-app-testTests */,
+				863B19A22F50F5C4002922E0 /* Wikipedia-place-app-testUITests */,
 				863B18F02F50EBDD002922E0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +132,152 @@
 				863B19062F50EBDE002922E0 /* Wikipedia-place-app-testUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		863B198F2F50F5B2002922E0 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				863B198C2F50F5B2002922E0 /* AppConfig.swift */,
+				863B198D2F50F5B2002922E0 /* Config-Debug.xcconfig */,
+				863B198E2F50F5B2002922E0 /* Config-Release.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		863B19902F50F5B2002922E0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				863D33412F52E95300C49DD1 /* APIPrefix.swift */,
+				863B19B72F50FBF9002922E0 /* NetworkError.swift */,
+				863B19B32F50F970002922E0 /* HTTPMethod.swift */,
+				863B19B12F50F936002922E0 /* APIEndpointProtocol.swift */,
+				863B19AF2F50F821002922E0 /* NetworkRouter.swift */,
+				863B19AD2F50F795002922E0 /* NetworkServiceFactory.swift */,
+				863B19A72F50F61E002922E0 /* NetworkManager.swift */,
+				863B19A52F50F5E2002922E0 /* NetworkService.swift */,
+				863B19A92F50F693002922E0 /* NetworkServiceConfiguration.swift */,
+				863B19AB2F50F70E002922E0 /* RouterProtocol.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		863B19952F50F5B2002922E0 /* Wikipedia-place-app-test */ = {
+			isa = PBXGroup;
+			children = (
+				863B19932F50F5B2002922E0 /* Info.plist */,
+				863B19922F50F5B2002922E0 /* ContentView.swift */,
+				863B19942F50F5B2002922E0 /* Wikipedia_place_app_testApp.swift */,
+				863B19912F50F5B2002922E0 /* Assets.xcassets */,
+				863B198F2F50F5B2002922E0 /* Configurations */,
+				863D332E2F52E1FC00C49DD1 /* Data */,
+				863D33342F52E32B00C49DD1 /* Domain */,
+				863B19902F50F5B2002922E0 /* Network */,
+				863D332B2F52DCE800C49DD1 /* Utils */,
+			);
+			path = "Wikipedia-place-app-test";
+			sourceTree = "<group>";
+		};
+		863B199E2F50F5C0002922E0 /* Wikipedia-place-app-testTests */ = {
+			isa = PBXGroup;
+			children = (
+				863B199D2F50F5C0002922E0 /* Wikipedia_place_app_testTests.swift */,
+			);
+			path = "Wikipedia-place-app-testTests";
+			sourceTree = "<group>";
+		};
+		863B19A22F50F5C4002922E0 /* Wikipedia-place-app-testUITests */ = {
+			isa = PBXGroup;
+			children = (
+				863B19A02F50F5C4002922E0 /* Wikipedia_place_app_testUITests.swift */,
+				863B19A12F50F5C4002922E0 /* Wikipedia_place_app_testUITestsLaunchTests.swift */,
+			);
+			path = "Wikipedia-place-app-testUITests";
+			sourceTree = "<group>";
+		};
+		863D332B2F52DCE800C49DD1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				863D332C2F52DCFC00C49DD1 /* URLOpener.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		863D332E2F52E1FC00C49DD1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				863D332F2F52E20500C49DD1 /* DTO */,
+				863D33382F52E54600C49DD1 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		863D332F2F52E20500C49DD1 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				863D33322F52E29500C49DD1 /* LocationDTO.swift */,
+				863D33302F52E25C00C49DD1 /* LocationResponseDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		863D33342F52E32B00C49DD1 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				863D33352F52E33300C49DD1 /* Entities */,
+				863D333B2F52E57400C49DD1 /* RepositoryProtocols */,
+				863D33432F52EB3300C49DD1 /* UseCases */,
+				863D33462F52EB5700C49DD1 /* UseCasesProtocols */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		863D33352F52E33300C49DD1 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				863D33362F52E33700C49DD1 /* Location.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		863D33382F52E54600C49DD1 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				863D33402F52E68300C49DD1 /* Location */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		863D333B2F52E57400C49DD1 /* RepositoryProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				863D333C2F52E57F00C49DD1 /* LocationRepositoryProtocol.swift */,
+			);
+			path = RepositoryProtocols;
+			sourceTree = "<group>";
+		};
+		863D33402F52E68300C49DD1 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				863D33392F52E55000C49DD1 /* LocationRepository.swift */,
+				863D333E2F52E67900C49DD1 /* LocationEndpoint.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		863D33432F52EB3300C49DD1 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				863D33442F52EB3B00C49DD1 /* FetchLocationsUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		863D33462F52EB5700C49DD1 /* UseCasesProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				863D33472F52EB6600C49DD1 /* FetchLocationsUseCaseProtocol.swift */,
+			);
+			path = UseCasesProtocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,9 +294,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				863B18F12F50EBDD002922E0 /* Wikipedia-place-app-test */,
 			);
 			name = "Wikipedia-place-app-test";
 			packageProductDependencies = (
@@ -130,9 +315,6 @@
 			dependencies = (
 				863B18FE2F50EBDE002922E0 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				863B18FF2F50EBDE002922E0 /* Wikipedia-place-app-testTests */,
-			);
 			name = "Wikipedia-place-app-testTests";
 			packageProductDependencies = (
 			);
@@ -152,9 +334,6 @@
 			);
 			dependencies = (
 				863B19082F50EBDE002922E0 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				863B19092F50EBDE002922E0 /* Wikipedia-place-app-testUITests */,
 			);
 			name = "Wikipedia-place-app-testUITests";
 			packageProductDependencies = (
@@ -212,6 +391,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				863B19992F50F5B2002922E0 /* Config-Debug.xcconfig in Resources */,
+				863B199A2F50F5B2002922E0 /* Config-Release.xcconfig in Resources */,
+				863B199B2F50F5B2002922E0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +418,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				863B19962F50F5B2002922E0 /* AppConfig.swift in Sources */,
+				863B19AE2F50F79C002922E0 /* NetworkServiceFactory.swift in Sources */,
+				863D33372F52E33900C49DD1 /* Location.swift in Sources */,
+				863B19AC2F50F710002922E0 /* RouterProtocol.swift in Sources */,
+				863B19B42F50F972002922E0 /* HTTPMethod.swift in Sources */,
+				863D333A2F52E55600C49DD1 /* LocationRepository.swift in Sources */,
+				863B19972F50F5B2002922E0 /* ContentView.swift in Sources */,
+				863D333F2F52E67C00C49DD1 /* LocationEndpoint.swift in Sources */,
+				863B19A82F50F621002922E0 /* NetworkManager.swift in Sources */,
+				863D33482F52EB6B00C49DD1 /* FetchLocationsUseCaseProtocol.swift in Sources */,
+				863B19A62F50F605002922E0 /* NetworkService.swift in Sources */,
+				863D33312F52E28200C49DD1 /* LocationResponseDTO.swift in Sources */,
+				863B19982F50F5B2002922E0 /* Wikipedia_place_app_testApp.swift in Sources */,
+				863B19AA2F50F698002922E0 /* NetworkServiceConfiguration.swift in Sources */,
+				863B19B82F50FBFC002922E0 /* NetworkError.swift in Sources */,
+				863D33452F52EB4700C49DD1 /* FetchLocationsUseCase.swift in Sources */,
+				863B19B02F50F824002922E0 /* NetworkRouter.swift in Sources */,
+				863D33332F52E29800C49DD1 /* LocationDTO.swift in Sources */,
+				863B19B22F50F93A002922E0 /* APIEndpointProtocol.swift in Sources */,
+				863D333D2F52E58300C49DD1 /* LocationRepositoryProtocol.swift in Sources */,
+				863D33422F52E95600C49DD1 /* APIPrefix.swift in Sources */,
+				863D332D2F52DD1000C49DD1 /* URLOpener.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				863B199F2F50F5C0002922E0 /* Wikipedia_place_app_testTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +455,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				863B19A32F50F5C4002922E0 /* Wikipedia_place_app_testUITests.swift in Sources */,
+				863B19A42F50F5C4002922E0 /* Wikipedia_place_app_testUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +478,7 @@
 /* Begin XCBuildConfiguration section */
 		863B190E2F50EBDE002922E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 863B198D2F50F5B2002922E0 /* Config-Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -334,6 +542,7 @@
 		};
 		863B190F2F50EBDE002922E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 863B198E2F50F5B2002922E0 /* Config-Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -397,11 +606,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Wikipedia-place-app-test/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,11 +639,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Wikipedia-place-app-test/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,0 +1,11 @@
+//
+//  Config-Debug.xcconfig
+//  Wikipedia-place-app-test
+//
+//  Created by Alessandro Minopoli on 26/02/26.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+
+API_URL = https:/$()/raw.githubusercontent.com

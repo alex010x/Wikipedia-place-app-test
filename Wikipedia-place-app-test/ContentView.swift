@@ -20,5 +20,6 @@ struct ContentView: View {
 }
 
 #Preview {
+    UIApplication.shared.open(URL(string: "")!)
     ContentView()
 }
