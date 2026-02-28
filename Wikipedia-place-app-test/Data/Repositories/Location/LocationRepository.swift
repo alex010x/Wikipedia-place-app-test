@@ -16,11 +16,11 @@ struct LocationRepository: LocationRepositoryProtocol {
     }
     
     func fetchAll() async throws -> [Location] {
-        let dto: [LocationDTO] = try await networkService
+        let dto: LocationResponseDTO = try await networkService
             .networkManager
             .router
             .request(endpoint: LocationEndpoint.pageLocation)
         
-        return dto.map { .init(from: $0) }
+        return dto.locations.map { Location(from: $0) }
     }
 }

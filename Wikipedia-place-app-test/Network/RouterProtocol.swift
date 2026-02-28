@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Routing interface
 protocol RouterProtocol {
     var session: URLSessionDataProtocol { get }
     var configuration: NetworkServiceConfiguration { get }

@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Service is provided to repositories through injection
 protocol NetworkServiceProtocol {
     var networkManager: NetworkManagerProtocol { get }
 }

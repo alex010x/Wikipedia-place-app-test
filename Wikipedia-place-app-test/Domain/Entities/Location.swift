@@ -31,3 +31,14 @@ struct Location: Hashable {
         self.longitude = longitude
     }
 }
+
+extension Location {
+    
+    var viewName: String {
+        name ?? "Unknown location name"
+    }
+    
+    var viewCoordinates: String {
+        "\(latitude), \(longitude)"
+    }
+}

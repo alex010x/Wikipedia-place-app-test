@@ -11,7 +11,7 @@ import SwiftUI
 struct Wikipedia_place_app_testApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LocationView(viewModel: LocationViewModel(fetchLocationsUseCase: FetchLocationsUseCase(repository: LocationRepository(networkService: NetworkServiceFactory.createNetworkService()))))
         }
     }
 }

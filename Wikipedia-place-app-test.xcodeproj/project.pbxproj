@@ -20,7 +20,6 @@
 		863B19A82F50F621002922E0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19A72F50F61E002922E0 /* NetworkManager.swift */; };
 		863B19AA2F50F698002922E0 /* NetworkServiceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19A92F50F693002922E0 /* NetworkServiceConfiguration.swift */; };
 		863B19AC2F50F710002922E0 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19AB2F50F70E002922E0 /* RouterProtocol.swift */; };
-		863B19AE2F50F79C002922E0 /* NetworkServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19AD2F50F795002922E0 /* NetworkServiceFactory.swift */; };
 		863B19B02F50F824002922E0 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19AF2F50F821002922E0 /* NetworkRouter.swift */; };
 		863B19B22F50F93A002922E0 /* APIEndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19B12F50F936002922E0 /* APIEndpointProtocol.swift */; };
 		863B19B42F50F972002922E0 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19B32F50F970002922E0 /* HTTPMethod.swift */; };
@@ -35,6 +34,10 @@
 		863D33422F52E95600C49DD1 /* APIPrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33412F52E95300C49DD1 /* APIPrefix.swift */; };
 		863D33452F52EB4700C49DD1 /* FetchLocationsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33442F52EB3B00C49DD1 /* FetchLocationsUseCase.swift */; };
 		863D33482F52EB6B00C49DD1 /* FetchLocationsUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33472F52EB6600C49DD1 /* FetchLocationsUseCaseProtocol.swift */; };
+		863D33592F52F13700C49DD1 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33582F52F12F00C49DD1 /* LocationView.swift */; };
+		863D335B2F52F13D00C49DD1 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D335A2F52F13900C49DD1 /* LocationViewModel.swift */; };
+		863D335D2F52FAFA00C49DD1 /* NetworkServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D335C2F52FAFA00C49DD1 /* NetworkServiceFactory.swift */; };
+		863D33602F52FDC300C49DD1 /* LocationCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D335F2F52FDC000C49DD1 /* LocationCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +75,6 @@
 		863B19A72F50F61E002922E0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		863B19A92F50F693002922E0 /* NetworkServiceConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceConfiguration.swift; sourceTree = "<group>"; };
 		863B19AB2F50F70E002922E0 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
-		863B19AD2F50F795002922E0 /* NetworkServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceFactory.swift; sourceTree = "<group>"; };
 		863B19AF2F50F821002922E0 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
 		863B19B12F50F936002922E0 /* APIEndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpointProtocol.swift; sourceTree = "<group>"; };
 		863B19B32F50F970002922E0 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -87,6 +89,10 @@
 		863D33412F52E95300C49DD1 /* APIPrefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPrefix.swift; sourceTree = "<group>"; };
 		863D33442F52EB3B00C49DD1 /* FetchLocationsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchLocationsUseCase.swift; sourceTree = "<group>"; };
 		863D33472F52EB6600C49DD1 /* FetchLocationsUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchLocationsUseCaseProtocol.swift; sourceTree = "<group>"; };
+		863D33582F52F12F00C49DD1 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		863D335A2F52F13900C49DD1 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		863D335C2F52FAFA00C49DD1 /* NetworkServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceFactory.swift; sourceTree = "<group>"; };
+		863D335F2F52FDC000C49DD1 /* LocationCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,15 +153,15 @@
 		863B19902F50F5B2002922E0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				863D33412F52E95300C49DD1 /* APIPrefix.swift */,
-				863B19B72F50FBF9002922E0 /* NetworkError.swift */,
-				863B19B32F50F970002922E0 /* HTTPMethod.swift */,
 				863B19B12F50F936002922E0 /* APIEndpointProtocol.swift */,
-				863B19AF2F50F821002922E0 /* NetworkRouter.swift */,
-				863B19AD2F50F795002922E0 /* NetworkServiceFactory.swift */,
+				863D33412F52E95300C49DD1 /* APIPrefix.swift */,
+				863B19B32F50F970002922E0 /* HTTPMethod.swift */,
+				863B19B72F50FBF9002922E0 /* NetworkError.swift */,
 				863B19A72F50F61E002922E0 /* NetworkManager.swift */,
+				863B19AF2F50F821002922E0 /* NetworkRouter.swift */,
 				863B19A52F50F5E2002922E0 /* NetworkService.swift */,
 				863B19A92F50F693002922E0 /* NetworkServiceConfiguration.swift */,
+				863D335C2F52FAFA00C49DD1 /* NetworkServiceFactory.swift */,
 				863B19AB2F50F70E002922E0 /* RouterProtocol.swift */,
 			);
 			path = Network;
@@ -172,6 +178,7 @@
 				863D332E2F52E1FC00C49DD1 /* Data */,
 				863D33342F52E32B00C49DD1 /* Domain */,
 				863B19902F50F5B2002922E0 /* Network */,
+				863D33552F52F0E500C49DD1 /* Presentation */,
 				863D332B2F52DCE800C49DD1 /* Utils */,
 			);
 			path = "Wikipedia-place-app-test";
@@ -278,6 +285,40 @@
 				863D33472F52EB6600C49DD1 /* FetchLocationsUseCaseProtocol.swift */,
 			);
 			path = UseCasesProtocols;
+			sourceTree = "<group>";
+		};
+		863D33552F52F0E500C49DD1 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				863D33572F52F12900C49DD1 /* Location */,
+				863D33562F52F0F700C49DD1 /* Coordinators */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		863D33562F52F0F700C49DD1 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		863D33572F52F12900C49DD1 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				863D335E2F52FDBC00C49DD1 /* Cell */,
+				863D335A2F52F13900C49DD1 /* LocationViewModel.swift */,
+				863D33582F52F12F00C49DD1 /* LocationView.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		863D335E2F52FDBC00C49DD1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				863D335F2F52FDC000C49DD1 /* LocationCellView.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,8 +460,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				863B19962F50F5B2002922E0 /* AppConfig.swift in Sources */,
-				863B19AE2F50F79C002922E0 /* NetworkServiceFactory.swift in Sources */,
+				863D335D2F52FAFA00C49DD1 /* NetworkServiceFactory.swift in Sources */,
 				863D33372F52E33900C49DD1 /* Location.swift in Sources */,
+				863D33602F52FDC300C49DD1 /* LocationCellView.swift in Sources */,
 				863B19AC2F50F710002922E0 /* RouterProtocol.swift in Sources */,
 				863B19B42F50F972002922E0 /* HTTPMethod.swift in Sources */,
 				863D333A2F52E55600C49DD1 /* LocationRepository.swift in Sources */,
@@ -436,6 +478,8 @@
 				863D33452F52EB4700C49DD1 /* FetchLocationsUseCase.swift in Sources */,
 				863B19B02F50F824002922E0 /* NetworkRouter.swift in Sources */,
 				863D33332F52E29800C49DD1 /* LocationDTO.swift in Sources */,
+				863D335B2F52F13D00C49DD1 /* LocationViewModel.swift in Sources */,
+				863D33592F52F13700C49DD1 /* LocationView.swift in Sources */,
 				863B19B22F50F93A002922E0 /* APIEndpointProtocol.swift in Sources */,
 				863D333D2F52E58300C49DD1 /* LocationRepositoryProtocol.swift in Sources */,
 				863D33422F52E95600C49DD1 /* APIPrefix.swift in Sources */,
