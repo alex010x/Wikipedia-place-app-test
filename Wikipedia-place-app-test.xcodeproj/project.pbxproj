@@ -38,7 +38,6 @@
 		863D335D2F52FAFA00C49DD1 /* NetworkServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D335C2F52FAFA00C49DD1 /* NetworkServiceFactory.swift */; };
 		863D33602F52FDC300C49DD1 /* LocationCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D335F2F52FDC000C49DD1 /* LocationCellView.swift */; };
 		863D33622F530E1B00C49DD1 /* LocationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33612F530E1800C49DD1 /* LocationCoordinator.swift */; };
-		863D33652F530FB100C49DD1 /* CoordinatorNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33642F530FAD00C49DD1 /* CoordinatorNavigation.swift */; };
 		863D33672F53146800C49DD1 /* CustomLocationCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33662F53146600C49DD1 /* CustomLocationCache.swift */; };
 		863D336A2F531A3800C49DD1 /* AddCustomLocationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33692F531A3200C49DD1 /* AddCustomLocationUseCase.swift */; };
 		863D336C2F531A4900C49DD1 /* AddCustomLocationUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D336B2F531A4500C49DD1 /* AddCustomLocationUseCaseProtocol.swift */; };
@@ -102,7 +101,6 @@
 		863D335C2F52FAFA00C49DD1 /* NetworkServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceFactory.swift; sourceTree = "<group>"; };
 		863D335F2F52FDC000C49DD1 /* LocationCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCellView.swift; sourceTree = "<group>"; };
 		863D33612F530E1800C49DD1 /* LocationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCoordinator.swift; sourceTree = "<group>"; };
-		863D33642F530FAD00C49DD1 /* CoordinatorNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorNavigation.swift; sourceTree = "<group>"; };
 		863D33662F53146600C49DD1 /* CustomLocationCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLocationCache.swift; sourceTree = "<group>"; };
 		863D33692F531A3200C49DD1 /* AddCustomLocationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomLocationUseCase.swift; sourceTree = "<group>"; };
 		863D336B2F531A4500C49DD1 /* AddCustomLocationUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomLocationUseCaseProtocol.swift; sourceTree = "<group>"; };
@@ -322,7 +320,6 @@
 		863D33562F52F0F700C49DD1 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				863D33642F530FAD00C49DD1 /* CoordinatorNavigation.swift */,
 				863D33632F530FA700C49DD1 /* Location */,
 			);
 			path = Coordinators;
@@ -528,7 +525,6 @@
 				863B19AC2F50F710002922E0 /* RouterProtocol.swift in Sources */,
 				863B19B42F50F972002922E0 /* HTTPMethod.swift in Sources */,
 				863D333A2F52E55600C49DD1 /* LocationRepository.swift in Sources */,
-				863D33652F530FB100C49DD1 /* CoordinatorNavigation.swift in Sources */,
 				863D333F2F52E67C00C49DD1 /* LocationEndpoint.swift in Sources */,
 				863B19A82F50F621002922E0 /* NetworkManager.swift in Sources */,
 				863D33482F52EB6B00C49DD1 /* FetchLocationsUseCaseProtocol.swift in Sources */,

@@ -68,19 +68,6 @@ struct LocationCoordinator: View {
     }
 }
 
-// MARK: Location destination
-
-enum LocationDestination: Destination {
-    case locationView
-    
-    var id: String {
-        switch self {
-        case .locationView:
-            return "location_view"
-        }
-    }
-}
-
 private enum AccessibilityCoordinatorValues: String {
     case addNewLocationLabel = "Add new custom location"
     case addNewLocationHint = "Tap here to add a new location to the list"
