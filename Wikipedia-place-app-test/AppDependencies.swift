@@ -9,12 +9,14 @@ struct AppDependencies {
     let networkService: NetworkServiceProtocol
     let cache: CustomLocationCacheProtocol
     let deeplinkHandler: WikipediaDeeplinkServiceProtocol
+    let errorHandler: ErrorHandler
     
     static func makeDefault() -> AppDependencies {
         AppDependencies(
             networkService: NetworkServiceFactory.createNetworkService(),
             cache: CustomLocationCache(),
-            deeplinkHandler: WikipediaDeeplinkService(urlOpener: URLOpener())
+            deeplinkHandler: WikipediaDeeplinkService(urlOpener: URLOpener()),
+            errorHandler: ErrorHandler()
         )
     }
 }

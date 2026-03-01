@@ -43,9 +43,10 @@
 		863D336C2F531A4900C49DD1 /* AddCustomLocationUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D336B2F531A4500C49DD1 /* AddCustomLocationUseCaseProtocol.swift */; };
 		863D33712F531E0300C49DD1 /* CustomLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33702F531E0100C49DD1 /* CustomLocationView.swift */; };
 		863D33732F531E2600C49DD1 /* CustomLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33722F531E2200C49DD1 /* CustomLocationViewModel.swift */; };
-		863D337A2F5444EE00C49DD1 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33792F5444EC00C49DD1 /* Dependencies.swift */; };
+		863D337A2F5444EE00C49DD1 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33792F5444EC00C49DD1 /* AppDependencies.swift */; };
 		863D337C2F54478D00C49DD1 /* DeeplinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D337B2F54478900C49DD1 /* DeeplinkService.swift */; };
 		863D337F2F544F4200C49DD1 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D337E2F544F4000C49DD1 /* Coordinates.swift */; };
+		863D33822F54553000C49DD1 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33812F54552D00C49DD1 /* ErrorHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,9 +107,10 @@
 		863D336B2F531A4500C49DD1 /* AddCustomLocationUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomLocationUseCaseProtocol.swift; sourceTree = "<group>"; };
 		863D33702F531E0100C49DD1 /* CustomLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLocationView.swift; sourceTree = "<group>"; };
 		863D33722F531E2200C49DD1 /* CustomLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLocationViewModel.swift; sourceTree = "<group>"; };
-		863D33792F5444EC00C49DD1 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		863D33792F5444EC00C49DD1 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 		863D337B2F54478900C49DD1 /* DeeplinkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkService.swift; sourceTree = "<group>"; };
 		863D337E2F544F4000C49DD1 /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		863D33812F54552D00C49DD1 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,13 +189,14 @@
 			isa = PBXGroup;
 			children = (
 				863B19932F50F5B2002922E0 /* Info.plist */,
-				863D33792F5444EC00C49DD1 /* Dependencies.swift */,
+				863D33792F5444EC00C49DD1 /* AppDependencies.swift */,
 				863B19942F50F5B2002922E0 /* Wikipedia_place_app_testApp.swift */,
 				863B19912F50F5B2002922E0 /* Assets.xcassets */,
 				863B198F2F50F5B2002922E0 /* Configurations */,
 				863D332E2F52E1FC00C49DD1 /* Data */,
 				863D33742F5379B200C49DD1 /* Deeplinking */,
 				863D33342F52E32B00C49DD1 /* Domain */,
+				863D33802F54552400C49DD1 /* Errors */,
 				863B19902F50F5B2002922E0 /* Network */,
 				863D33552F52F0E500C49DD1 /* Presentation */,
 				863D332B2F52DCE800C49DD1 /* Utils */,
@@ -377,6 +380,14 @@
 			path = Coordinates;
 			sourceTree = "<group>";
 		};
+		863D33802F54552400C49DD1 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				863D33812F54552D00C49DD1 /* ErrorHandler.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -532,12 +543,13 @@
 				863D33312F52E28200C49DD1 /* LocationResponseDTO.swift in Sources */,
 				863B19982F50F5B2002922E0 /* Wikipedia_place_app_testApp.swift in Sources */,
 				863D33712F531E0300C49DD1 /* CustomLocationView.swift in Sources */,
-				863D337A2F5444EE00C49DD1 /* Dependencies.swift in Sources */,
+				863D337A2F5444EE00C49DD1 /* AppDependencies.swift in Sources */,
 				863D337C2F54478D00C49DD1 /* DeeplinkService.swift in Sources */,
 				863B19AA2F50F698002922E0 /* NetworkServiceConfiguration.swift in Sources */,
 				863D337F2F544F4200C49DD1 /* Coordinates.swift in Sources */,
 				863B19B82F50FBFC002922E0 /* NetworkError.swift in Sources */,
 				863D33452F52EB4700C49DD1 /* FetchLocationsUseCase.swift in Sources */,
+				863D33822F54553000C49DD1 /* ErrorHandler.swift in Sources */,
 				863B19B02F50F824002922E0 /* NetworkRouter.swift in Sources */,
 				863D33332F52E29800C49DD1 /* LocationDTO.swift in Sources */,
 				863D33732F531E2600C49DD1 /* CustomLocationViewModel.swift in Sources */,

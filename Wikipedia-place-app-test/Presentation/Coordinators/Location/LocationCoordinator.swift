@@ -15,17 +15,19 @@ struct LocationCoordinator: View {
     private let fetchLocationUseCase: FetchLocationsUseCaseProtocol
     private let addCustomLocationUseCase: AddCustomLocationUseCaseProtocol
     private let deeplinkServiceHandler: WikipediaDeeplinkServiceProtocol
+    @ObservedObject private var errorHandler: ErrorHandler
     
     init(
         fetchLocationUseCase: FetchLocationsUseCaseProtocol,
         addCustomLocationUseCase: AddCustomLocationUseCaseProtocol,
-        deeplinkServiceHandler: WikipediaDeeplinkServiceProtocol
+        deeplinkServiceHandler: WikipediaDeeplinkServiceProtocol,
+        errorHandler: ErrorHandler
     ) {
         self.fetchLocationUseCase = fetchLocationUseCase
         self.addCustomLocationUseCase = addCustomLocationUseCase
         self.deeplinkServiceHandler = deeplinkServiceHandler
+        self.errorHandler = errorHandler
         self._viewModel = StateObject(wrappedValue: LocationViewModel(fetchLocationsUseCase: fetchLocationUseCase))
-
     }
     
     var body: some View {
@@ -39,7 +41,11 @@ struct LocationCoordinator: View {
             viewModel: viewModel,
             onLocationTap: { location in
                 Task {
-                    try await deeplinkServiceHandler.openWikipedia(for: location)
+                    do {
+                        try await deeplinkServiceHandler.openWikipedia(for: location)
+                    } catch {
+                        errorHandler.handle(error)
+                    }
                 }
             }
         )
@@ -65,10 +71,18 @@ struct LocationCoordinator: View {
                 }
             ))
         }
+        .errorAlert(handler: errorHandler)
     }
 }
 
+// MARK: Accessibility
 private enum AccessibilityCoordinatorValues: String {
     case addNewLocationLabel = "Add new custom location"
     case addNewLocationHint = "Tap here to add a new location to the list"
+}
+
+// MARK: - Localized strings
+private enum CoordinatorViewLocalizedConstants: String {
+    case okButtonTitle = "Ok"
+    case errorTextTitle = "Error"
 }

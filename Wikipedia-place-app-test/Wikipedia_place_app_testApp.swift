@@ -23,7 +23,8 @@ struct Wikipedia_place_app_testApp: App {
         coordinator = LocationCoordinator(
             fetchLocationUseCase: FetchLocationsUseCase(repository: repository),
             addCustomLocationUseCase: AddCustomLocationUseCase(repository: repository),
-            deeplinkServiceHandler: dependencies.deeplinkHandler
+            deeplinkServiceHandler: dependencies.deeplinkHandler,
+            errorHandler: dependencies.errorHandler
         )
     }
     
