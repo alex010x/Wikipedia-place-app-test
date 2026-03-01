@@ -46,11 +46,8 @@ struct WikipediaDeeplinkService: WikipediaDeeplinkServiceProtocol {
     }
     
     private func makeURL(for location: Location) -> URL? {
-        let coordinates = Coordinates(latitude: location.latitude, longitude: location.longitude)
         
-        guard let data = try? JSONEncoder().encode(coordinates),
-              let jsonString = String(data: data, encoding: .utf8)
-        else { return nil }
+        guard let jsonString = encode(location) else { return nil }
         
         var components = URLComponents()
         components.scheme = DeeplinkConstants.scheme.rawValue
@@ -60,4 +57,22 @@ struct WikipediaDeeplinkService: WikipediaDeeplinkServiceProtocol {
         ]
         return components.url
     }
+    
+    private func encode(_ location: Location) -> String? {
+        let coordinates = Coordinates(latitude: location.latitude, longitude: location.longitude)
+        
+        guard let data = try? JSONEncoder().encode(coordinates),
+              let jsonString = String(data: data, encoding: .utf8)
+        else {
+            return nil
+        }
+        
+        return jsonString
+    }
+}
+
+/// Used to encode for deeplinking purposes, as Wikipedia app expects a json string to map out the Coordinate model.
+fileprivate struct Coordinates: Encodable {
+    let latitude: Double
+    let longitude: Double
 }

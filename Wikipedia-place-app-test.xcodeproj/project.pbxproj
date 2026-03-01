@@ -45,7 +45,6 @@
 		863D33732F531E2600C49DD1 /* CustomLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33722F531E2200C49DD1 /* CustomLocationViewModel.swift */; };
 		863D337A2F5444EE00C49DD1 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33792F5444EC00C49DD1 /* AppDependencies.swift */; };
 		863D337C2F54478D00C49DD1 /* DeeplinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D337B2F54478900C49DD1 /* DeeplinkService.swift */; };
-		863D337F2F544F4200C49DD1 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D337E2F544F4000C49DD1 /* Coordinates.swift */; };
 		863D33822F54553000C49DD1 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33812F54552D00C49DD1 /* ErrorHandler.swift */; };
 /* End PBXBuildFile section */
 
@@ -109,7 +108,6 @@
 		863D33722F531E2200C49DD1 /* CustomLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLocationViewModel.swift; sourceTree = "<group>"; };
 		863D33792F5444EC00C49DD1 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 		863D337B2F54478900C49DD1 /* DeeplinkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkService.swift; sourceTree = "<group>"; };
-		863D337E2F544F4000C49DD1 /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
 		863D33812F54552D00C49DD1 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -232,7 +230,6 @@
 		863D332E2F52E1FC00C49DD1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				863D337D2F544F3A00C49DD1 /* Coordinates */,
 				863D332F2F52E20500C49DD1 /* DTO */,
 				863D33382F52E54600C49DD1 /* Repositories */,
 			);
@@ -370,14 +367,6 @@
 				863D337B2F54478900C49DD1 /* DeeplinkService.swift */,
 			);
 			path = Deeplinking;
-			sourceTree = "<group>";
-		};
-		863D337D2F544F3A00C49DD1 /* Coordinates */ = {
-			isa = PBXGroup;
-			children = (
-				863D337E2F544F4000C49DD1 /* Coordinates.swift */,
-			);
-			path = Coordinates;
 			sourceTree = "<group>";
 		};
 		863D33802F54552400C49DD1 /* Errors */ = {
@@ -546,7 +535,6 @@
 				863D337A2F5444EE00C49DD1 /* AppDependencies.swift in Sources */,
 				863D337C2F54478D00C49DD1 /* DeeplinkService.swift in Sources */,
 				863B19AA2F50F698002922E0 /* NetworkServiceConfiguration.swift in Sources */,
-				863D337F2F544F4200C49DD1 /* Coordinates.swift in Sources */,
 				863B19B82F50FBFC002922E0 /* NetworkError.swift in Sources */,
 				863D33452F52EB4700C49DD1 /* FetchLocationsUseCase.swift in Sources */,
 				863D33822F54553000C49DD1 /* ErrorHandler.swift in Sources */,
