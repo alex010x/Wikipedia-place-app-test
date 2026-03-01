@@ -19,6 +19,6 @@ struct Wikipedia_place_app_testApp {
     }
     
     private static var isProduction: Bool {
-        return NSClassFromString("XCTestCase") == nil
+        return NSClassFromString("XCTestCase") == nil // check if we're running tests
     }
 }

@@ -15,7 +15,6 @@
 		863B19A32F50F5C4002922E0 /* Wikipedia_place_app_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19A02F50F5C4002922E0 /* Wikipedia_place_app_testUITests.swift */; };
 		863B19A42F50F5C4002922E0 /* Wikipedia_place_app_testUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19A12F50F5C4002922E0 /* Wikipedia_place_app_testUITestsLaunchTests.swift */; };
 		863B19A62F50F605002922E0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19A52F50F5E2002922E0 /* NetworkService.swift */; };
-		863B19A82F50F621002922E0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19A72F50F61E002922E0 /* NetworkManager.swift */; };
 		863B19AA2F50F698002922E0 /* NetworkServiceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19A92F50F693002922E0 /* NetworkServiceConfiguration.swift */; };
 		863B19AC2F50F710002922E0 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19AB2F50F70E002922E0 /* RouterProtocol.swift */; };
 		863B19B02F50F824002922E0 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19AF2F50F821002922E0 /* NetworkRouter.swift */; };
@@ -56,6 +55,10 @@
 		863D339F2F547EBB00C49DD1 /* LocationEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D339E2F547EB700C49DD1 /* LocationEndpointTests.swift */; };
 		863D33A12F5487C300C49DD1 /* WikipediaPlaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33A02F5487BD00C49DD1 /* WikipediaPlaceApp.swift */; };
 		863D33A42F54881E00C49DD1 /* WikipediaPlaceAppTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33A32F54881A00C49DD1 /* WikipediaPlaceAppTest.swift */; };
+		863D33A62F548A4700C49DD1 /* LocationRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33A52F548A4500C49DD1 /* LocationRepositoryTests.swift */; };
+		863D33AC2F548FE700C49DD1 /* FetchLocationUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33AB2F548FDC00C49DD1 /* FetchLocationUseCaseTests.swift */; };
+		863D33AE2F54905100C49DD1 /* MockLocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33AD2F54904C00C49DD1 /* MockLocationRepository.swift */; };
+		863D33B02F54915600C49DD1 /* AddCustomLocationUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33AF2F54914F00C49DD1 /* AddCustomLocationUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +91,6 @@
 		863B19A02F50F5C4002922E0 /* Wikipedia_place_app_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wikipedia_place_app_testUITests.swift; sourceTree = "<group>"; };
 		863B19A12F50F5C4002922E0 /* Wikipedia_place_app_testUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wikipedia_place_app_testUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		863B19A52F50F5E2002922E0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		863B19A72F50F61E002922E0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		863B19A92F50F693002922E0 /* NetworkServiceConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceConfiguration.swift; sourceTree = "<group>"; };
 		863B19AB2F50F70E002922E0 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
 		863B19AF2F50F821002922E0 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
@@ -129,6 +131,10 @@
 		863D339E2F547EB700C49DD1 /* LocationEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationEndpointTests.swift; sourceTree = "<group>"; };
 		863D33A02F5487BD00C49DD1 /* WikipediaPlaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaPlaceApp.swift; sourceTree = "<group>"; };
 		863D33A32F54881A00C49DD1 /* WikipediaPlaceAppTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaPlaceAppTest.swift; sourceTree = "<group>"; };
+		863D33A52F548A4500C49DD1 /* LocationRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRepositoryTests.swift; sourceTree = "<group>"; };
+		863D33AB2F548FDC00C49DD1 /* FetchLocationUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchLocationUseCaseTests.swift; sourceTree = "<group>"; };
+		863D33AD2F54904C00C49DD1 /* MockLocationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationRepository.swift; sourceTree = "<group>"; };
+		863D33AF2F54914F00C49DD1 /* AddCustomLocationUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomLocationUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +199,6 @@
 				863D33412F52E95300C49DD1 /* APIPrefix.swift */,
 				863B19B32F50F970002922E0 /* HTTPMethod.swift */,
 				863B19B72F50FBF9002922E0 /* NetworkError.swift */,
-				863B19A72F50F61E002922E0 /* NetworkManager.swift */,
 				863B19AF2F50F821002922E0 /* NetworkRouter.swift */,
 				863B19A52F50F5E2002922E0 /* NetworkService.swift */,
 				863B19A92F50F693002922E0 /* NetworkServiceConfiguration.swift */,
@@ -224,10 +229,11 @@
 		863B199E2F50F5C0002922E0 /* Wikipedia-place-app-testTests */ = {
 			isa = PBXGroup;
 			children = (
-				863D33902F5461EA00C49DD1 /* Deeplinks */,
-				863D338F2F5460DE00C49DD1 /* Utils */,
 				863D338A2F54602200C49DD1 /* Data */,
+				863D33902F5461EA00C49DD1 /* Deeplinks */,
+				863D33A92F548FC700C49DD1 /* Domain */,
 				863D33832F545FA600C49DD1 /* Network */,
+				863D338F2F5460DE00C49DD1 /* Utils */,
 			);
 			path = "Wikipedia-place-app-testTests";
 			sourceTree = "<group>";
@@ -455,6 +461,7 @@
 		863D33962F546E9600C49DD1 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				863D33A52F548A4500C49DD1 /* LocationRepositoryTests.swift */,
 				863D339E2F547EB700C49DD1 /* LocationEndpointTests.swift */,
 			);
 			path = Repositories;
@@ -463,6 +470,7 @@
 		863D33972F546F0200C49DD1 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				863D33AD2F54904C00C49DD1 /* MockLocationRepository.swift */,
 				863D339A2F546FC900C49DD1 /* MockURLSession.swift */,
 			);
 			path = Mocks;
@@ -477,6 +485,23 @@
 				863B19942F50F5B2002922E0 /* Wikipedia_place_app_testApp.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		863D33A92F548FC700C49DD1 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				863D33AA2F548FD100C49DD1 /* Usecases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		863D33AA2F548FD100C49DD1 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				863D33AF2F54914F00C49DD1 /* AddCustomLocationUseCaseTests.swift */,
+				863D33AB2F548FDC00C49DD1 /* FetchLocationUseCaseTests.swift */,
+			);
+			path = Usecases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -630,7 +655,6 @@
 				863B19B42F50F972002922E0 /* HTTPMethod.swift in Sources */,
 				863D333A2F52E55600C49DD1 /* LocationRepository.swift in Sources */,
 				863D333F2F52E67C00C49DD1 /* LocationEndpoint.swift in Sources */,
-				863B19A82F50F621002922E0 /* NetworkManager.swift in Sources */,
 				863D33482F52EB6B00C49DD1 /* FetchLocationsUseCaseProtocol.swift in Sources */,
 				863B19A62F50F605002922E0 /* NetworkService.swift in Sources */,
 				863D33312F52E28200C49DD1 /* LocationResponseDTO.swift in Sources */,
@@ -662,7 +686,11 @@
 			files = (
 				863D339D2F54793600C49DD1 /* NetworkRouterTests.swift in Sources */,
 				863D338C2F54602B00C49DD1 /* Data+.swift in Sources */,
+				863D33AE2F54905100C49DD1 /* MockLocationRepository.swift in Sources */,
+				863D33B02F54915600C49DD1 /* AddCustomLocationUseCaseTests.swift in Sources */,
 				863D33922F5463D300C49DD1 /* WikipediaDeeplinkServiceTests.swift in Sources */,
+				863D33AC2F548FE700C49DD1 /* FetchLocationUseCaseTests.swift in Sources */,
+				863D33A62F548A4700C49DD1 /* LocationRepositoryTests.swift in Sources */,
 				863D339F2F547EBB00C49DD1 /* LocationEndpointTests.swift in Sources */,
 				863D338E2F5460D800C49DD1 /* URLOpenerMock.swift in Sources */,
 				863D339B2F546FCD00C49DD1 /* MockURLSession.swift in Sources */,

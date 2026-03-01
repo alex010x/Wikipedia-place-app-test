@@ -46,7 +46,6 @@ struct NetworkServiceFactory {
             session: URLSession.shared,
             configuration: .default
         )
-        let networkManager = NetworkManager(router: networkRouter)
-        return NetworkService(networkManager: networkManager)
+        return NetworkService(router: networkRouter)
     }
 }

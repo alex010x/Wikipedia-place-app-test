@@ -9,14 +9,17 @@ import Foundation
 
 /// Service is provided to repositories through injection
 protocol NetworkServiceProtocol {
-    var networkManager: NetworkManagerProtocol { get }
+    func request<T: Decodable>(endpoint: APIEndpointProtocol) async throws -> T
 }
 
-struct NetworkService: NetworkServiceProtocol {
+final class NetworkService: NetworkServiceProtocol {
+    let router: RouterProtocol
     
-    let networkManager: NetworkManagerProtocol
+    required init(router: RouterProtocol) {
+        self.router = router
+    }
     
-    init(networkManager: NetworkManagerProtocol) {
-        self.networkManager = networkManager
+    func request<T: Decodable>(endpoint: APIEndpointProtocol) async throws -> T {
+        try await router.request(endpoint: endpoint)
     }
 }

@@ -9,7 +9,7 @@
 /// 
 /// Conforming types must be actors to guarantee thread-safe access to the cached elements.
 /// This protocol defines minimal operations needed to interact with the cache: retrieving all
-/// cached items, adding a new item, and clearing the cache. Implementations are expected to
+/// cached items, adding a new item. Implementations are expected to
 /// preserve insertion order unless otherwise documented.
 protocol CustomLocationCacheProtocol: Actor {
     /// Returns the current snapshot of all cached `LocationDTO` elements.
@@ -25,12 +25,6 @@ protocol CustomLocationCacheProtocol: Actor {
     /// - Important: This mutates the cache and must be invoked with `await` from
     ///   outside the actor context to respect actor isolation.
     func addElement(_ element: LocationDTO)
-    
-    /// Removes all elements from the cache.
-    ///
-    /// - Important: This clears the cache entirely and must be invoked with `await`
-    ///   from outside the actor context to respect actor isolation.
-    func clearCache()
 }
 
 actor CustomLocationCache: CustomLocationCacheProtocol {
@@ -43,9 +37,5 @@ actor CustomLocationCache: CustomLocationCacheProtocol {
     
     func addElement(_ element: LocationDTO) {
         elements.append(element)
-    }
-    
-    func clearCache() {
-        elements.removeAll()
     }
 }

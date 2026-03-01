@@ -53,8 +53,6 @@ struct LocationRepository: LocationRepositoryProtocol {
     
     func fetchAll() async throws -> [Location] {
         let responseDTO: LocationResponseDTO = try await networkService
-            .networkManager
-            .router
             .request(endpoint: LocationEndpoint.pageLocation)
         
         let fetchedLocations = responseDTO.locations.map { Location(from: $0) }
