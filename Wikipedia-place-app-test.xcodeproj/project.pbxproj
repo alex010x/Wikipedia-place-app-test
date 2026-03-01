@@ -12,7 +12,6 @@
 		863B19992F50F5B2002922E0 /* Config-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 863B198D2F50F5B2002922E0 /* Config-Debug.xcconfig */; };
 		863B199A2F50F5B2002922E0 /* Config-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 863B198E2F50F5B2002922E0 /* Config-Release.xcconfig */; };
 		863B199B2F50F5B2002922E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 863B19912F50F5B2002922E0 /* Assets.xcassets */; };
-		863B199F2F50F5C0002922E0 /* Wikipedia_place_app_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B199D2F50F5C0002922E0 /* Wikipedia_place_app_testTests.swift */; };
 		863B19A32F50F5C4002922E0 /* Wikipedia_place_app_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19A02F50F5C4002922E0 /* Wikipedia_place_app_testUITests.swift */; };
 		863B19A42F50F5C4002922E0 /* Wikipedia_place_app_testUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19A12F50F5C4002922E0 /* Wikipedia_place_app_testUITestsLaunchTests.swift */; };
 		863B19A62F50F605002922E0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19A52F50F5E2002922E0 /* NetworkService.swift */; };
@@ -46,6 +45,11 @@
 		863D337A2F5444EE00C49DD1 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33792F5444EC00C49DD1 /* AppDependencies.swift */; };
 		863D337C2F54478D00C49DD1 /* DeeplinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D337B2F54478900C49DD1 /* DeeplinkService.swift */; };
 		863D33822F54553000C49DD1 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33812F54552D00C49DD1 /* ErrorHandler.swift */; };
+		863D33872F545FC800C49DD1 /* LocationResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 863D33862F545FBA00C49DD1 /* LocationResponse.json */; };
+		863D33892F545FFC00C49DD1 /* DTOFromFileMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33882F545FF900C49DD1 /* DTOFromFileMocks.swift */; };
+		863D338C2F54602B00C49DD1 /* Data+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D338B2F54602900C49DD1 /* Data+.swift */; };
+		863D338E2F5460D800C49DD1 /* URLOpenerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D338D2F5460CF00C49DD1 /* URLOpenerMock.swift */; };
+		863D33922F5463D300C49DD1 /* WikipediaDeeplinkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33912F5463CA00C49DD1 /* WikipediaDeeplinkServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +79,6 @@
 		863B19912F50F5B2002922E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		863B19932F50F5B2002922E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		863B19942F50F5B2002922E0 /* Wikipedia_place_app_testApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wikipedia_place_app_testApp.swift; sourceTree = "<group>"; };
-		863B199D2F50F5C0002922E0 /* Wikipedia_place_app_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wikipedia_place_app_testTests.swift; sourceTree = "<group>"; };
 		863B19A02F50F5C4002922E0 /* Wikipedia_place_app_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wikipedia_place_app_testUITests.swift; sourceTree = "<group>"; };
 		863B19A12F50F5C4002922E0 /* Wikipedia_place_app_testUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wikipedia_place_app_testUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		863B19A52F50F5E2002922E0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -109,6 +112,11 @@
 		863D33792F5444EC00C49DD1 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 		863D337B2F54478900C49DD1 /* DeeplinkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkService.swift; sourceTree = "<group>"; };
 		863D33812F54552D00C49DD1 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		863D33862F545FBA00C49DD1 /* LocationResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LocationResponse.json; sourceTree = "<group>"; };
+		863D33882F545FF900C49DD1 /* DTOFromFileMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOFromFileMocks.swift; sourceTree = "<group>"; };
+		863D338B2F54602900C49DD1 /* Data+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+.swift"; sourceTree = "<group>"; };
+		863D338D2F5460CF00C49DD1 /* URLOpenerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLOpenerMock.swift; sourceTree = "<group>"; };
+		863D33912F5463CA00C49DD1 /* WikipediaDeeplinkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaDeeplinkServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,7 +213,10 @@
 		863B199E2F50F5C0002922E0 /* Wikipedia-place-app-testTests */ = {
 			isa = PBXGroup;
 			children = (
-				863B199D2F50F5C0002922E0 /* Wikipedia_place_app_testTests.swift */,
+				863D33902F5461EA00C49DD1 /* Deeplinks */,
+				863D338F2F5460DE00C49DD1 /* Utils */,
+				863D338A2F54602200C49DD1 /* Data */,
+				863D33832F545FA600C49DD1 /* Network */,
 			);
 			path = "Wikipedia-place-app-testTests";
 			sourceTree = "<group>";
@@ -377,6 +388,47 @@
 			path = Errors;
 			sourceTree = "<group>";
 		};
+		863D33832F545FA600C49DD1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				863D33882F545FF900C49DD1 /* DTOFromFileMocks.swift */,
+				863D33852F545FB500C49DD1 /* jsonMocks */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		863D33852F545FB500C49DD1 /* jsonMocks */ = {
+			isa = PBXGroup;
+			children = (
+				863D33862F545FBA00C49DD1 /* LocationResponse.json */,
+			);
+			path = jsonMocks;
+			sourceTree = "<group>";
+		};
+		863D338A2F54602200C49DD1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				863D338B2F54602900C49DD1 /* Data+.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		863D338F2F5460DE00C49DD1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				863D338D2F5460CF00C49DD1 /* URLOpenerMock.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		863D33902F5461EA00C49DD1 /* Deeplinks */ = {
+			isa = PBXGroup;
+			children = (
+				863D33912F5463CA00C49DD1 /* WikipediaDeeplinkServiceTests.swift */,
+			);
+			path = Deeplinks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -498,6 +550,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				863D33872F545FC800C49DD1 /* LocationResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,7 +608,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				863B199F2F50F5C0002922E0 /* Wikipedia_place_app_testTests.swift in Sources */,
+				863D338C2F54602B00C49DD1 /* Data+.swift in Sources */,
+				863D33922F5463D300C49DD1 /* WikipediaDeeplinkServiceTests.swift in Sources */,
+				863D338E2F5460D800C49DD1 /* URLOpenerMock.swift in Sources */,
+				863D33892F545FFC00C49DD1 /* DTOFromFileMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

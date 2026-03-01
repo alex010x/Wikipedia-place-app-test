@@ -35,7 +35,6 @@ struct LocationDTO: DTOProtocol {
     let latitude: Double
     let longitude: Double
     
-    
     enum CodingKeys: String, CodingKey {
         case name
         case latitude = "lat"
