@@ -94,4 +94,7 @@ extension CustomLocationViewModel {
     var accessibilityNameText: String { "Name of the location" }
     var accessibilityNameHint: String { "Insert here the name of the location" }
     var alertAnnouncementErrorText: String { "Error, please form correctly the coordinates" }
+    var accessibilityCancelHint: String { "Tap to dismiss without saving" }
+    var accessibilityDoneHint: String { "Tap to save the location" }
+    var accessibilityFormText: String { "Add new location form" }
 }

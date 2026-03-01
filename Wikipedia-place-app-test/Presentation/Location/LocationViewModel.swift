@@ -57,8 +57,12 @@ extension LocationViewModel {
         }
     }
     
-    var accessibilityRequestFailureAccouncement: String {
+    var accessibilityRequestFailureAnnouncement: String {
         "There was an error with your request. Please tap on retry."
+    }
+    
+    var accessibilityLoadingLocations: String {
+        "Loading locations"
     }
 }
 

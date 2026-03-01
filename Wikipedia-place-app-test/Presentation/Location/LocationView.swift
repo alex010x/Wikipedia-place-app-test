@@ -27,6 +27,7 @@ struct LocationView: View {
     
     private var loadingView: some View {
         ProgressView()
+            .accessibilityLabel(viewModel.accessibilityLoadingLocations)
             .task {
                 await viewModel.fetchLocations()
             }
@@ -56,7 +57,7 @@ struct LocationView: View {
     private func makeErrorView(for error: Error) -> some View {
         VStack {
             Text(error.localizedDescription)
-            
+                .accessibilityLabel(error.localizedDescription)
             Button {
                 Task {
                     await viewModel.fetchLocations()
@@ -66,10 +67,12 @@ struct LocationView: View {
             }
             .accessibilityElement(children: .ignore)
             .accessibilityAddTraits(.isButton)
+            .accessibilityLabel(viewModel.retryButtonText)
         }
+        .accessibilityElement(children: .combine)
         .onAppear {
             AccessibilityNotification.Announcement(
-                viewModel.accessibilityRequestFailureAccouncement
+                viewModel.accessibilityRequestFailureAnnouncement
             ).post()
         }
     }

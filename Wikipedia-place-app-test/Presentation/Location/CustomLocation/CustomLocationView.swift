@@ -64,6 +64,8 @@ struct CustomLocationView: View {
                     Text(viewModel.coordinatesFooterText)
                 }
             }
+            .accessibilityElement(children: .contain)
+            .accessibilityLabel(viewModel.accessibilityFormText)
             .navigationTitle(viewModel.navigationTitle)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -73,6 +75,8 @@ struct CustomLocationView: View {
                     }
                     .accessibilityElement(children: .ignore)
                     .accessibilityAddTraits(.isButton)
+                    .accessibilityLabel(viewModel.cancelButtonText)
+                    .accessibilityHint(viewModel.accessibilityCancelHint)
                 }
                 
                 ToolbarItem(placement: .topBarTrailing) {
@@ -84,6 +88,8 @@ struct CustomLocationView: View {
                     }
                     .accessibilityElement(children: .ignore)
                     .accessibilityAddTraits(.isButton)
+                    .accessibilityLabel(viewModel.addNewLocationText)
+                    .accessibilityHint(viewModel.accessibilityDoneHint)
                     .bold()
                 }
                 
@@ -94,6 +100,7 @@ struct CustomLocationView: View {
                     }
                     .accessibilityElement(children: .ignore)
                     .accessibilityAddTraits(.isButton)
+                    .accessibilityLabel(viewModel.doneText)
                 }
             }
             .alert(
@@ -103,6 +110,7 @@ struct CustomLocationView: View {
                 Button(viewModel.okButtonText, role: .cancel) {}
                     .accessibilityAddTraits(.isButton)
                     .accessibilityElement(children: .ignore)
+                    .accessibilityLabel(viewModel.okButtonText)
             } message: {
                 Text(viewModel.errorMessage)
             }
