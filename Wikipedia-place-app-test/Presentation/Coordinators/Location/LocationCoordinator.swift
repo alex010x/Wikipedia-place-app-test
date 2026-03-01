@@ -80,9 +80,3 @@ private enum AccessibilityCoordinatorValues: String {
     case addNewLocationLabel = "Add new custom location"
     case addNewLocationHint = "Tap here to add a new location to the list"
 }
-
-// MARK: - Localized strings
-private enum CoordinatorViewLocalizedConstants: String {
-    case okButtonTitle = "Ok"
-    case errorTextTitle = "Error"
-}
