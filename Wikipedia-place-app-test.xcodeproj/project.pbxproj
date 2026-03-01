@@ -54,6 +54,8 @@
 		863D339B2F546FCD00C49DD1 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D339A2F546FC900C49DD1 /* MockURLSession.swift */; };
 		863D339D2F54793600C49DD1 /* NetworkRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D339C2F54793100C49DD1 /* NetworkRouterTests.swift */; };
 		863D339F2F547EBB00C49DD1 /* LocationEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D339E2F547EB700C49DD1 /* LocationEndpointTests.swift */; };
+		863D33A12F5487C300C49DD1 /* WikipediaPlaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33A02F5487BD00C49DD1 /* WikipediaPlaceApp.swift */; };
+		863D33A42F54881E00C49DD1 /* WikipediaPlaceAppTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33A32F54881A00C49DD1 /* WikipediaPlaceAppTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +127,8 @@
 		863D339A2F546FC900C49DD1 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		863D339C2F54793100C49DD1 /* NetworkRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouterTests.swift; sourceTree = "<group>"; };
 		863D339E2F547EB700C49DD1 /* LocationEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationEndpointTests.swift; sourceTree = "<group>"; };
+		863D33A02F5487BD00C49DD1 /* WikipediaPlaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaPlaceApp.swift; sourceTree = "<group>"; };
+		863D33A32F54881A00C49DD1 /* WikipediaPlaceAppTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaPlaceAppTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,9 +206,8 @@
 		863B19952F50F5B2002922E0 /* Wikipedia-place-app-test */ = {
 			isa = PBXGroup;
 			children = (
+				863D33A22F5487C500C49DD1 /* App */,
 				863B19932F50F5B2002922E0 /* Info.plist */,
-				863D33792F5444EC00C49DD1 /* AppDependencies.swift */,
-				863B19942F50F5B2002922E0 /* Wikipedia_place_app_testApp.swift */,
 				863B19912F50F5B2002922E0 /* Assets.xcassets */,
 				863B198F2F50F5B2002922E0 /* Configurations */,
 				863D332E2F52E1FC00C49DD1 /* Data */,
@@ -465,6 +468,17 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		863D33A22F5487C500C49DD1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				863D33792F5444EC00C49DD1 /* AppDependencies.swift */,
+				863D33A02F5487BD00C49DD1 /* WikipediaPlaceApp.swift */,
+				863D33A32F54881A00C49DD1 /* WikipediaPlaceAppTest.swift */,
+				863B19942F50F5B2002922E0 /* Wikipedia_place_app_testApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -606,6 +620,7 @@
 			files = (
 				863B19962F50F5B2002922E0 /* AppConfig.swift in Sources */,
 				863D336C2F531A4900C49DD1 /* AddCustomLocationUseCaseProtocol.swift in Sources */,
+				863D33A42F54881E00C49DD1 /* WikipediaPlaceAppTest.swift in Sources */,
 				863D335D2F52FAFA00C49DD1 /* NetworkServiceFactory.swift in Sources */,
 				863D33672F53146800C49DD1 /* CustomLocationCache.swift in Sources */,
 				863D33372F52E33900C49DD1 /* Location.swift in Sources */,
@@ -632,6 +647,7 @@
 				863D33732F531E2600C49DD1 /* CustomLocationViewModel.swift in Sources */,
 				863D335B2F52F13D00C49DD1 /* LocationViewModel.swift in Sources */,
 				863D33592F52F13700C49DD1 /* LocationView.swift in Sources */,
+				863D33A12F5487C300C49DD1 /* WikipediaPlaceApp.swift in Sources */,
 				863B19B22F50F93A002922E0 /* APIEndpointProtocol.swift in Sources */,
 				863D333D2F52E58300C49DD1 /* LocationRepositoryProtocol.swift in Sources */,
 				863D33422F52E95600C49DD1 /* APIPrefix.swift in Sources */,

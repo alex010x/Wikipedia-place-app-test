@@ -1,15 +1,13 @@
 //
-//  Wikipedia_place_app_testApp.swift
+//  Untitled.swift
 //  Wikipedia-place-app-test
 //
-//  Created by Alessandro Minopoli on 26/02/26.
+//  Created by Alessandro Minopoli on 01/03/26.
 //
 
 import SwiftUI
 
-@main
-struct Wikipedia_place_app_testApp: App {
-    
+struct WikipediaPlaceApp: App {
     private let coordinator: LocationCoordinator
     
     init() {
