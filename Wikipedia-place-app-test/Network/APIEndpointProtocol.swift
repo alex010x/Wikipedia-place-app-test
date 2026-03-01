@@ -54,7 +54,6 @@ extension APIEndpointProtocol {
 
         var request = URLRequest(url: url)
         
-        // Append query items and/or raw query string
         if let requestURL = request.url,
            let components = URLComponents(url: requestURL, resolvingAgainstBaseURL: false) {
             request.url = components.url

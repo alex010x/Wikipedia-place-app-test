@@ -9,7 +9,6 @@ import SwiftUI
 
 struct LocationCoordinator: View {
     @State private var isAddingLocation = false
-    @State private var navigationPath = NavigationPath()
     @StateObject private var viewModel: LocationViewModel
     
     private let fetchLocationUseCase: FetchLocationsUseCaseProtocol
@@ -31,7 +30,7 @@ struct LocationCoordinator: View {
     }
     
     var body: some View {
-        NavigationStack(path: $navigationPath) {
+        NavigationStack {
             locationView
         }
     }
@@ -40,13 +39,7 @@ struct LocationCoordinator: View {
         LocationView(
             viewModel: viewModel,
             onLocationTap: { location in
-                Task {
-                    do {
-                        try await deeplinkServiceHandler.openWikipedia(for: location)
-                    } catch {
-                        errorHandler.handle(error)
-                    }
-                }
+                handleLocationTap(location)
             }
         )
         .toolbar {
@@ -72,6 +65,16 @@ struct LocationCoordinator: View {
             ))
         }
         .errorAlert(handler: errorHandler)
+    }
+    
+    private func handleLocationTap(_ location: Location) {
+        Task {
+            do {
+                try await deeplinkServiceHandler.openWikipedia(for: location)
+            } catch {
+                errorHandler.handle(error)
+            }
+        }
     }
 }
 
