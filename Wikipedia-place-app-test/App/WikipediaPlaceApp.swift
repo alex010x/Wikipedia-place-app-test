@@ -28,7 +28,7 @@ struct WikipediaPlaceApp: App {
     
     var body: some Scene {
         WindowGroup {
-            coordinator
+            CoordinatedView(coordinator)
         }
     }
 }

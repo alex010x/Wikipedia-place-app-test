@@ -1,21 +1,19 @@
-//
-//  LocationCoordinator.swift
-//  Wikipedia-place-app-test
-//
-//  Created by Alessandro Minopoli on 28/02/26.
-//
+// MARK: - LocationCoordinator.swift
 
 import SwiftUI
+import Combine
 
-struct LocationCoordinator: View {
-    @State private var isAddingLocation = false
-    @StateObject private var viewModel: LocationViewModel
+final class LocationCoordinator: Coordinator {
+    typealias Route = Never
+
+    let navigationController = NavigationController() // first coordinator on the stack
+    @Published var sheet: LocationCoordinatorSheet?
     
     private let fetchLocationUseCase: FetchLocationsUseCaseProtocol
     private let addCustomLocationUseCase: AddCustomLocationUseCaseProtocol
     private let deeplinkServiceHandler: WikipediaDeeplinkServiceProtocol
-    @ObservedObject private var errorHandler: ErrorHandler
-    
+    private let errorHandler: ErrorHandler
+    private let viewModel: LocationViewModel
     init(
         fetchLocationUseCase: FetchLocationsUseCaseProtocol,
         addCustomLocationUseCase: AddCustomLocationUseCaseProtocol,
@@ -26,48 +24,58 @@ struct LocationCoordinator: View {
         self.addCustomLocationUseCase = addCustomLocationUseCase
         self.deeplinkServiceHandler = deeplinkServiceHandler
         self.errorHandler = errorHandler
-        self._viewModel = StateObject(wrappedValue: LocationViewModel(fetchLocationsUseCase: fetchLocationUseCase))
+        self.viewModel = LocationViewModel(fetchLocationsUseCase: fetchLocationUseCase)
     }
-    
-    var body: some View {
-        NavigationStack {
-            locationView
-        }
-    }
-    
-    private var locationView: some View {
+
+    @ViewBuilder
+    var rootView: some View {
         LocationView(
             viewModel: viewModel,
-            onLocationTap: { location in
-                handleLocationTap(location)
+            onLocationTap: { [weak self] location in
+                self?.handleLocationTap(location)
             }
         )
+        .navigationDestination(for: Route.self, destination: coordinate(_:))
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
-                    isAddingLocation = true
+                    self.showAddCustomLocation()
                 } label: {
                     Image(systemName: "plus")
                 }
-                .accessibilityLabel(AccessibilityCoordinatorValues.addNewLocationLabel.rawValue)
+                .accessibilityLabel(AccessibilityValues.addNewLocationLabel)
                 .accessibilityAddTraits(.isButton)
-                .accessibilityHint(AccessibilityCoordinatorValues.addNewLocationHint.rawValue)
+                .accessibilityHint(AccessibilityValues.addNewLocationHint)
             }
         }
-        .sheet(isPresented: $isAddingLocation) {
-            CustomLocationView(viewModel: CustomLocationViewModel(
-                useCase: addCustomLocationUseCase,
-                onAddNewLocation: {
-                    Task {
-                        await viewModel.fetchLocations()
-                    }
+        .sheet(item: Binding(
+            get: { self.sheet },
+            set: { self.sheet = $0 }
+        )) { sheet in
+            self.buildSheet(
+                sheet: sheet,
+                onAddNewLocation: { [weak self] in
+                    await self?.viewModel.fetchLocations()
                 }
-            ))
+            )
         }
         .errorAlert(handler: errorHandler)
     }
-    
-    private func handleLocationTap(_ location: Location) {
+}
+
+// MARK: - LocationCoordinatorProtocol
+
+extension LocationCoordinator: LocationCoordinatorProtocol {
+
+    func showAddCustomLocation() {
+        sheet = .addCustomLocation
+    }
+
+    func dismissSheet() {
+        sheet = nil
+    }
+
+    func handleLocationTap(_ location: Location) {
         Task {
             do {
                 try await deeplinkServiceHandler.openWikipedia(for: location)
@@ -78,8 +86,32 @@ struct LocationCoordinator: View {
     }
 }
 
-// MARK: Accessibility
-private enum AccessibilityCoordinatorValues: String {
-    case addNewLocationLabel = "Add new custom location"
-    case addNewLocationHint = "Tap here to add a new location to the list"
+// MARK: - Sheet Builder
+
+private extension LocationCoordinator {
+
+    @ViewBuilder
+    func buildSheet(
+        sheet: LocationCoordinatorSheet,
+        onAddNewLocation: @escaping () async -> Void
+    ) -> some View {
+        switch sheet {
+        case .addCustomLocation:
+            CustomLocationView(
+                viewModel: CustomLocationViewModel(
+                    useCase: addCustomLocationUseCase,
+                    onAddNewLocation: {
+                        Task { await onAddNewLocation() }
+                    }
+                )
+            )
+        }
+    }
+}
+
+// MARK: - Accessibility
+
+private enum AccessibilityValues {
+    static let addNewLocationLabel = "Add new custom location"
+    static let addNewLocationHint = "Tap here to add a new location to the list"
 }

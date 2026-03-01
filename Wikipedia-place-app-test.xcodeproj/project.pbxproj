@@ -65,6 +65,15 @@
 		863D33BB2F5496C900C49DD1 /* CustomLocationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33BA2F5496C500C49DD1 /* CustomLocationViewModelTests.swift */; };
 		863D33BE2F5498A000C49DD1 /* ErrorHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33BD2F54989D00C49DD1 /* ErrorHandlerTests.swift */; };
 		863D33C02F549B7000C49DD1 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33BF2F549B6E00C49DD1 /* LocationTests.swift */; };
+		863D33C42F54A4C400C49DD1 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33C32F54A4C200C49DD1 /* NavigationController.swift */; };
+		863D33C62F54A52000C49DD1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33C52F54A51F00C49DD1 /* Coordinator.swift */; };
+		863D33C82F54A53E00C49DD1 /* CoordinatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33C72F54A53C00C49DD1 /* CoordinatedView.swift */; };
+		863D33CA2F54A5AA00C49DD1 /* LocationCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33C92F54A5A900C49DD1 /* LocationCoordinatorProtocol.swift */; };
+		863D33CC2F54A61200C49DD1 /* LocationCoordinatorRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33CB2F54A60F00C49DD1 /* LocationCoordinatorRoute.swift */; };
+		863D33D02F54AABD00C49DD1 /* Coordinator+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33CF2F54AABC00C49DD1 /* Coordinator+.swift */; };
+		863D33D22F54E77900C49DD1 /* LocationCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33D12F54E77400C49DD1 /* LocationCoordinatorTests.swift */; };
+		863D33D52F54E7FB00C49DD1 /* MockWikipediaDeeplinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33D42F54E7F500C49DD1 /* MockWikipediaDeeplinkService.swift */; };
+		863D33D72F54E9BE00C49DD1 /* NavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33D62F54E9B900C49DD1 /* NavigationControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +156,15 @@
 		863D33BA2F5496C500C49DD1 /* CustomLocationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLocationViewModelTests.swift; sourceTree = "<group>"; };
 		863D33BD2F54989D00C49DD1 /* ErrorHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandlerTests.swift; sourceTree = "<group>"; };
 		863D33BF2F549B6E00C49DD1 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
+		863D33C32F54A4C200C49DD1 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		863D33C52F54A51F00C49DD1 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		863D33C72F54A53C00C49DD1 /* CoordinatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatedView.swift; sourceTree = "<group>"; };
+		863D33C92F54A5A900C49DD1 /* LocationCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		863D33CB2F54A60F00C49DD1 /* LocationCoordinatorRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCoordinatorRoute.swift; sourceTree = "<group>"; };
+		863D33CF2F54AABC00C49DD1 /* Coordinator+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinator+.swift"; sourceTree = "<group>"; };
+		863D33D12F54E77400C49DD1 /* LocationCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCoordinatorTests.swift; sourceTree = "<group>"; };
+		863D33D42F54E7F500C49DD1 /* MockWikipediaDeeplinkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWikipediaDeeplinkService.swift; sourceTree = "<group>"; };
+		863D33D62F54E9B900C49DD1 /* NavigationControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -361,6 +379,10 @@
 		863D33562F52F0F700C49DD1 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				863D33CE2F54AAB700C49DD1 /* Routes */,
+				863D33C72F54A53C00C49DD1 /* CoordinatedView.swift */,
+				863D33C52F54A51F00C49DD1 /* Coordinator.swift */,
+				863D33C32F54A4C200C49DD1 /* NavigationController.swift */,
 				863D33632F530FA700C49DD1 /* Location */,
 			);
 			path = Coordinators;
@@ -388,6 +410,8 @@
 		863D33632F530FA700C49DD1 /* Location */ = {
 			isa = PBXGroup;
 			children = (
+				863D33CD2F54A61600C49DD1 /* Routes */,
+				863D33C92F54A5A900C49DD1 /* LocationCoordinatorProtocol.swift */,
 				863D33612F530E1800C49DD1 /* LocationCoordinator.swift */,
 			);
 			path = Location;
@@ -459,6 +483,7 @@
 		863D33902F5461EA00C49DD1 /* Deeplinks */ = {
 			isa = PBXGroup;
 			children = (
+				863D33D32F54E7E900C49DD1 /* Mocks */,
 				863D33912F5463CA00C49DD1 /* WikipediaDeeplinkServiceTests.swift */,
 			);
 			path = Deeplinks;
@@ -522,6 +547,8 @@
 		863D33B12F54943200C49DD1 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				863D33D62F54E9B900C49DD1 /* NavigationControllerTests.swift */,
+				863D33D12F54E77400C49DD1 /* LocationCoordinatorTests.swift */,
 				863D33BC2F54989400C49DD1 /* Errors */,
 				863D33BA2F5496C500C49DD1 /* CustomLocationViewModelTests.swift */,
 				863D33B22F54943B00C49DD1 /* LocationViewModelTests.swift */,
@@ -552,6 +579,30 @@
 				863D33BD2F54989D00C49DD1 /* ErrorHandlerTests.swift */,
 			);
 			path = Errors;
+			sourceTree = "<group>";
+		};
+		863D33CD2F54A61600C49DD1 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				863D33CB2F54A60F00C49DD1 /* LocationCoordinatorRoute.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		863D33CE2F54AAB700C49DD1 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				863D33CF2F54AABC00C49DD1 /* Coordinator+.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		863D33D32F54E7E900C49DD1 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				863D33D42F54E7F500C49DD1 /* MockWikipediaDeeplinkService.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -701,7 +752,9 @@
 				863D33372F52E33900C49DD1 /* Location.swift in Sources */,
 				863D33622F530E1B00C49DD1 /* LocationCoordinator.swift in Sources */,
 				863D33602F52FDC300C49DD1 /* LocationCellView.swift in Sources */,
+				863D33C62F54A52000C49DD1 /* Coordinator.swift in Sources */,
 				863B19AC2F50F710002922E0 /* RouterProtocol.swift in Sources */,
+				863D33C82F54A53E00C49DD1 /* CoordinatedView.swift in Sources */,
 				863B19B42F50F972002922E0 /* HTTPMethod.swift in Sources */,
 				863D333A2F52E55600C49DD1 /* LocationRepository.swift in Sources */,
 				863D333F2F52E67C00C49DD1 /* LocationEndpoint.swift in Sources */,
@@ -709,6 +762,7 @@
 				863B19A62F50F605002922E0 /* NetworkService.swift in Sources */,
 				863D33312F52E28200C49DD1 /* LocationResponseDTO.swift in Sources */,
 				863B19982F50F5B2002922E0 /* Wikipedia_place_app_testApp.swift in Sources */,
+				863D33C42F54A4C400C49DD1 /* NavigationController.swift in Sources */,
 				863D33712F531E0300C49DD1 /* CustomLocationView.swift in Sources */,
 				863D337A2F5444EE00C49DD1 /* AppDependencies.swift in Sources */,
 				863D337C2F54478D00C49DD1 /* DeeplinkService.swift in Sources */,
@@ -716,6 +770,8 @@
 				863B19B82F50FBFC002922E0 /* NetworkError.swift in Sources */,
 				863D33452F52EB4700C49DD1 /* FetchLocationsUseCase.swift in Sources */,
 				863D33822F54553000C49DD1 /* ErrorHandler.swift in Sources */,
+				863D33D02F54AABD00C49DD1 /* Coordinator+.swift in Sources */,
+				863D33CA2F54A5AA00C49DD1 /* LocationCoordinatorProtocol.swift in Sources */,
 				863B19B02F50F824002922E0 /* NetworkRouter.swift in Sources */,
 				863D33332F52E29800C49DD1 /* LocationDTO.swift in Sources */,
 				863D33732F531E2600C49DD1 /* CustomLocationViewModel.swift in Sources */,
@@ -724,6 +780,7 @@
 				863D33A12F5487C300C49DD1 /* WikipediaPlaceApp.swift in Sources */,
 				863B19B22F50F93A002922E0 /* APIEndpointProtocol.swift in Sources */,
 				863D333D2F52E58300C49DD1 /* LocationRepositoryProtocol.swift in Sources */,
+				863D33CC2F54A61200C49DD1 /* LocationCoordinatorRoute.swift in Sources */,
 				863D33422F52E95600C49DD1 /* APIPrefix.swift in Sources */,
 				863D336A2F531A3800C49DD1 /* AddCustomLocationUseCase.swift in Sources */,
 				863D332D2F52DD1000C49DD1 /* URLOpener.swift in Sources */,
@@ -742,12 +799,15 @@
 				863D33BE2F5498A000C49DD1 /* ErrorHandlerTests.swift in Sources */,
 				863D33922F5463D300C49DD1 /* WikipediaDeeplinkServiceTests.swift in Sources */,
 				863D33AC2F548FE700C49DD1 /* FetchLocationUseCaseTests.swift in Sources */,
+				863D33D72F54E9BE00C49DD1 /* NavigationControllerTests.swift in Sources */,
 				863D33B92F54964600C49DD1 /* MockAddCustomLocationUseCase.swift in Sources */,
 				863D33A62F548A4700C49DD1 /* LocationRepositoryTests.swift in Sources */,
 				863D33B32F54944500C49DD1 /* LocationViewModelTests.swift in Sources */,
 				863D339F2F547EBB00C49DD1 /* LocationEndpointTests.swift in Sources */,
 				863D338E2F5460D800C49DD1 /* URLOpenerMock.swift in Sources */,
+				863D33D22F54E77900C49DD1 /* LocationCoordinatorTests.swift in Sources */,
 				863D33BB2F5496C900C49DD1 /* CustomLocationViewModelTests.swift in Sources */,
+				863D33D52F54E7FB00C49DD1 /* MockWikipediaDeeplinkService.swift in Sources */,
 				863D339B2F546FCD00C49DD1 /* MockURLSession.swift in Sources */,
 				863D33892F545FFC00C49DD1 /* DTOFromFileMocks.swift in Sources */,
 				863D33C02F549B7000C49DD1 /* LocationTests.swift in Sources */,
@@ -974,7 +1034,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "test.Wikipedia-place-app-testTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -995,7 +1055,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "test.Wikipedia-place-app-testTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
