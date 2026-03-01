@@ -105,14 +105,4 @@ final class WikipediaDeeplinkServiceTests: XCTestCase {
         // Then
         XCTAssertEqual(mockURLOpener.openedURLs.count, 1)
     }
-    
-    // MARK: - Helpers
-    private func makeExpectedURLSet() -> Set<URL> {
-        var components = URLComponents()
-        components.scheme = "wikipedia"
-        components.host = "places"
-        let coords = "{\"latitude\":41.9028,\"longitude\":12.4964}"
-        components.queryItems = [URLQueryItem(name: "WMFPlacesCoordinates", value: coords)]
-        return Set([components.url].compactMap { $0 })
-    }
 }
