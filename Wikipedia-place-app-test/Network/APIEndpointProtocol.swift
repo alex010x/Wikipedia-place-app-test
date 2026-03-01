@@ -27,7 +27,6 @@ enum HTTPParametersType {
 protocol APIEndpointProtocol {
     var path: String { get }
     var method: HTTPMethod { get }
-    var queryItems: [URLQueryItem]? { get }
     var cachePolicy: URLRequest.CachePolicy { get }
 }
 
@@ -43,7 +42,6 @@ protocol APIEndpointProtocol {
 ///
 /// Behavior:
 /// - Builds a URL as: baseURL + APIPrefix.main.rawValue + path.
-/// - Merges existing URL query items (if any) with `queryItems` provided by the endpoint.
 /// - Sets `httpMethod` to the endpoint’s `method`.
 /// - Sets `cachePolicy` to the endpoint’s `cachePolicy`.
 ///
@@ -58,12 +56,7 @@ extension APIEndpointProtocol {
         
         // Append query items and/or raw query string
         if let requestURL = request.url,
-           var components = URLComponents(url: requestURL, resolvingAgainstBaseURL: false) {
-            
-            if let additionalQueryItems = queryItems, !additionalQueryItems.isEmpty {
-                components.queryItems = (components.queryItems ?? []) + additionalQueryItems
-            }
-            
+           let components = URLComponents(url: requestURL, resolvingAgainstBaseURL: false) {
             request.url = components.url
         }
         

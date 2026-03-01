@@ -50,6 +50,10 @@
 		863D338C2F54602B00C49DD1 /* Data+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D338B2F54602900C49DD1 /* Data+.swift */; };
 		863D338E2F5460D800C49DD1 /* URLOpenerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D338D2F5460CF00C49DD1 /* URLOpenerMock.swift */; };
 		863D33922F5463D300C49DD1 /* WikipediaDeeplinkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33912F5463CA00C49DD1 /* WikipediaDeeplinkServiceTests.swift */; };
+		863D33952F546C4D00C49DD1 /* LocationDTOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33942F546C4900C49DD1 /* LocationDTOTests.swift */; };
+		863D339B2F546FCD00C49DD1 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D339A2F546FC900C49DD1 /* MockURLSession.swift */; };
+		863D339D2F54793600C49DD1 /* NetworkRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D339C2F54793100C49DD1 /* NetworkRouterTests.swift */; };
+		863D339F2F547EBB00C49DD1 /* LocationEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D339E2F547EB700C49DD1 /* LocationEndpointTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +121,10 @@
 		863D338B2F54602900C49DD1 /* Data+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+.swift"; sourceTree = "<group>"; };
 		863D338D2F5460CF00C49DD1 /* URLOpenerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLOpenerMock.swift; sourceTree = "<group>"; };
 		863D33912F5463CA00C49DD1 /* WikipediaDeeplinkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaDeeplinkServiceTests.swift; sourceTree = "<group>"; };
+		863D33942F546C4900C49DD1 /* LocationDTOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDTOTests.swift; sourceTree = "<group>"; };
+		863D339A2F546FC900C49DD1 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		863D339C2F54793100C49DD1 /* NetworkRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouterTests.swift; sourceTree = "<group>"; };
+		863D339E2F547EB700C49DD1 /* LocationEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationEndpointTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,6 +399,8 @@
 		863D33832F545FA600C49DD1 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				863D339C2F54793100C49DD1 /* NetworkRouterTests.swift */,
+				863D33972F546F0200C49DD1 /* Mocks */,
 				863D33882F545FF900C49DD1 /* DTOFromFileMocks.swift */,
 				863D33852F545FB500C49DD1 /* jsonMocks */,
 			);
@@ -408,6 +418,8 @@
 		863D338A2F54602200C49DD1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				863D33962F546E9600C49DD1 /* Repositories */,
+				863D33932F546C4300C49DD1 /* DTO */,
 				863D338B2F54602900C49DD1 /* Data+.swift */,
 			);
 			path = Data;
@@ -427,6 +439,30 @@
 				863D33912F5463CA00C49DD1 /* WikipediaDeeplinkServiceTests.swift */,
 			);
 			path = Deeplinks;
+			sourceTree = "<group>";
+		};
+		863D33932F546C4300C49DD1 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				863D33942F546C4900C49DD1 /* LocationDTOTests.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		863D33962F546E9600C49DD1 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				863D339E2F547EB700C49DD1 /* LocationEndpointTests.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		863D33972F546F0200C49DD1 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				863D339A2F546FC900C49DD1 /* MockURLSession.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -608,10 +644,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				863D339D2F54793600C49DD1 /* NetworkRouterTests.swift in Sources */,
 				863D338C2F54602B00C49DD1 /* Data+.swift in Sources */,
 				863D33922F5463D300C49DD1 /* WikipediaDeeplinkServiceTests.swift in Sources */,
+				863D339F2F547EBB00C49DD1 /* LocationEndpointTests.swift in Sources */,
 				863D338E2F5460D800C49DD1 /* URLOpenerMock.swift in Sources */,
+				863D339B2F546FCD00C49DD1 /* MockURLSession.swift in Sources */,
 				863D33892F545FFC00C49DD1 /* DTOFromFileMocks.swift in Sources */,
+				863D33952F546C4D00C49DD1 /* LocationDTOTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
