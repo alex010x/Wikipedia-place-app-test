@@ -10,6 +10,7 @@ import SwiftUI
 struct LocationView: View {
     
     @ObservedObject var viewModel: LocationViewModel
+    let onLocationTap: (Location) -> Void
     
     var body: some View {
         Group {
@@ -39,7 +40,7 @@ struct LocationView: View {
                     coordinates: location.viewCoordinates
                 )
                 .onTapGesture {
-                    
+                    onLocationTap(location)
                 }
                 .accessibilityElement(children: .ignore)
                 .accessibilityAddTraits(.isButton)

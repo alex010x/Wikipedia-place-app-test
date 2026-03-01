@@ -41,11 +41,11 @@
 struct LocationRepository: LocationRepositoryProtocol {
     
     private let networkService: NetworkServiceProtocol
-    private let customLocationCache: any CustomCacheProtocol<LocationDTO>
+    private let customLocationCache: CustomLocationCacheProtocol
     
     init(
         networkService: NetworkServiceProtocol,
-        customLocationCache: any CustomCacheProtocol<LocationDTO>
+        customLocationCache: CustomLocationCacheProtocol
     ) {
         self.networkService = networkService
         self.customLocationCache = customLocationCache

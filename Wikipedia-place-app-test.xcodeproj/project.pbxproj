@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		863B19962F50F5B2002922E0 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B198C2F50F5B2002922E0 /* AppConfig.swift */; };
-		863B19972F50F5B2002922E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19922F50F5B2002922E0 /* ContentView.swift */; };
 		863B19982F50F5B2002922E0 /* Wikipedia_place_app_testApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19942F50F5B2002922E0 /* Wikipedia_place_app_testApp.swift */; };
 		863B19992F50F5B2002922E0 /* Config-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 863B198D2F50F5B2002922E0 /* Config-Debug.xcconfig */; };
 		863B199A2F50F5B2002922E0 /* Config-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 863B198E2F50F5B2002922E0 /* Config-Release.xcconfig */; };
@@ -40,11 +39,14 @@
 		863D33602F52FDC300C49DD1 /* LocationCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D335F2F52FDC000C49DD1 /* LocationCellView.swift */; };
 		863D33622F530E1B00C49DD1 /* LocationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33612F530E1800C49DD1 /* LocationCoordinator.swift */; };
 		863D33652F530FB100C49DD1 /* CoordinatorNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33642F530FAD00C49DD1 /* CoordinatorNavigation.swift */; };
-		863D33672F53146800C49DD1 /* CustomCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33662F53146600C49DD1 /* CustomCache.swift */; };
+		863D33672F53146800C49DD1 /* CustomLocationCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33662F53146600C49DD1 /* CustomLocationCache.swift */; };
 		863D336A2F531A3800C49DD1 /* AddCustomLocationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33692F531A3200C49DD1 /* AddCustomLocationUseCase.swift */; };
 		863D336C2F531A4900C49DD1 /* AddCustomLocationUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D336B2F531A4500C49DD1 /* AddCustomLocationUseCaseProtocol.swift */; };
 		863D33712F531E0300C49DD1 /* CustomLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33702F531E0100C49DD1 /* CustomLocationView.swift */; };
 		863D33732F531E2600C49DD1 /* CustomLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33722F531E2200C49DD1 /* CustomLocationViewModel.swift */; };
+		863D337A2F5444EE00C49DD1 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D33792F5444EC00C49DD1 /* Dependencies.swift */; };
+		863D337C2F54478D00C49DD1 /* DeeplinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D337B2F54478900C49DD1 /* DeeplinkService.swift */; };
+		863D337F2F544F4200C49DD1 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D337E2F544F4000C49DD1 /* Coordinates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +74,6 @@
 		863B198D2F50F5B2002922E0 /* Config-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Debug.xcconfig"; sourceTree = "<group>"; };
 		863B198E2F50F5B2002922E0 /* Config-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Release.xcconfig"; sourceTree = "<group>"; };
 		863B19912F50F5B2002922E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		863B19922F50F5B2002922E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		863B19932F50F5B2002922E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		863B19942F50F5B2002922E0 /* Wikipedia_place_app_testApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wikipedia_place_app_testApp.swift; sourceTree = "<group>"; };
 		863B199D2F50F5C0002922E0 /* Wikipedia_place_app_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wikipedia_place_app_testTests.swift; sourceTree = "<group>"; };
@@ -102,11 +103,14 @@
 		863D335F2F52FDC000C49DD1 /* LocationCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCellView.swift; sourceTree = "<group>"; };
 		863D33612F530E1800C49DD1 /* LocationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCoordinator.swift; sourceTree = "<group>"; };
 		863D33642F530FAD00C49DD1 /* CoordinatorNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorNavigation.swift; sourceTree = "<group>"; };
-		863D33662F53146600C49DD1 /* CustomCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCache.swift; sourceTree = "<group>"; };
+		863D33662F53146600C49DD1 /* CustomLocationCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLocationCache.swift; sourceTree = "<group>"; };
 		863D33692F531A3200C49DD1 /* AddCustomLocationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomLocationUseCase.swift; sourceTree = "<group>"; };
 		863D336B2F531A4500C49DD1 /* AddCustomLocationUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomLocationUseCaseProtocol.swift; sourceTree = "<group>"; };
 		863D33702F531E0100C49DD1 /* CustomLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLocationView.swift; sourceTree = "<group>"; };
 		863D33722F531E2200C49DD1 /* CustomLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLocationViewModel.swift; sourceTree = "<group>"; };
+		863D33792F5444EC00C49DD1 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		863D337B2F54478900C49DD1 /* DeeplinkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkService.swift; sourceTree = "<group>"; };
+		863D337E2F544F4000C49DD1 /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,11 +189,12 @@
 			isa = PBXGroup;
 			children = (
 				863B19932F50F5B2002922E0 /* Info.plist */,
-				863B19922F50F5B2002922E0 /* ContentView.swift */,
+				863D33792F5444EC00C49DD1 /* Dependencies.swift */,
 				863B19942F50F5B2002922E0 /* Wikipedia_place_app_testApp.swift */,
 				863B19912F50F5B2002922E0 /* Assets.xcassets */,
 				863B198F2F50F5B2002922E0 /* Configurations */,
 				863D332E2F52E1FC00C49DD1 /* Data */,
+				863D33742F5379B200C49DD1 /* Deeplinking */,
 				863D33342F52E32B00C49DD1 /* Domain */,
 				863B19902F50F5B2002922E0 /* Network */,
 				863D33552F52F0E500C49DD1 /* Presentation */,
@@ -226,6 +231,7 @@
 		863D332E2F52E1FC00C49DD1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				863D337D2F544F3A00C49DD1 /* Coordinates */,
 				863D332F2F52E20500C49DD1 /* DTO */,
 				863D33382F52E54600C49DD1 /* Repositories */,
 			);
@@ -263,7 +269,6 @@
 		863D33382F52E54600C49DD1 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				863D33682F53146B00C49DD1 /* Internal Cache */,
 				863D33402F52E68300C49DD1 /* Location */,
 			);
 			path = Repositories;
@@ -280,6 +285,7 @@
 		863D33402F52E68300C49DD1 /* Location */ = {
 			isa = PBXGroup;
 			children = (
+				863D33662F53146600C49DD1 /* CustomLocationCache.swift */,
 				863D33392F52E55000C49DD1 /* LocationRepository.swift */,
 				863D333E2F52E67900C49DD1 /* LocationEndpoint.swift */,
 			);
@@ -349,14 +355,6 @@
 			path = Location;
 			sourceTree = "<group>";
 		};
-		863D33682F53146B00C49DD1 /* Internal Cache */ = {
-			isa = PBXGroup;
-			children = (
-				863D33662F53146600C49DD1 /* CustomCache.swift */,
-			);
-			path = "Internal Cache";
-			sourceTree = "<group>";
-		};
 		863D336D2F531DC300C49DD1 /* CustomLocation */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +362,22 @@
 				863D33702F531E0100C49DD1 /* CustomLocationView.swift */,
 			);
 			path = CustomLocation;
+			sourceTree = "<group>";
+		};
+		863D33742F5379B200C49DD1 /* Deeplinking */ = {
+			isa = PBXGroup;
+			children = (
+				863D337B2F54478900C49DD1 /* DeeplinkService.swift */,
+			);
+			path = Deeplinking;
+			sourceTree = "<group>";
+		};
+		863D337D2F544F3A00C49DD1 /* Coordinates */ = {
+			isa = PBXGroup;
+			children = (
+				863D337E2F544F4000C49DD1 /* Coordinates.swift */,
+			);
+			path = Coordinates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -507,7 +521,7 @@
 				863B19962F50F5B2002922E0 /* AppConfig.swift in Sources */,
 				863D336C2F531A4900C49DD1 /* AddCustomLocationUseCaseProtocol.swift in Sources */,
 				863D335D2F52FAFA00C49DD1 /* NetworkServiceFactory.swift in Sources */,
-				863D33672F53146800C49DD1 /* CustomCache.swift in Sources */,
+				863D33672F53146800C49DD1 /* CustomLocationCache.swift in Sources */,
 				863D33372F52E33900C49DD1 /* Location.swift in Sources */,
 				863D33622F530E1B00C49DD1 /* LocationCoordinator.swift in Sources */,
 				863D33602F52FDC300C49DD1 /* LocationCellView.swift in Sources */,
@@ -515,7 +529,6 @@
 				863B19B42F50F972002922E0 /* HTTPMethod.swift in Sources */,
 				863D333A2F52E55600C49DD1 /* LocationRepository.swift in Sources */,
 				863D33652F530FB100C49DD1 /* CoordinatorNavigation.swift in Sources */,
-				863B19972F50F5B2002922E0 /* ContentView.swift in Sources */,
 				863D333F2F52E67C00C49DD1 /* LocationEndpoint.swift in Sources */,
 				863B19A82F50F621002922E0 /* NetworkManager.swift in Sources */,
 				863D33482F52EB6B00C49DD1 /* FetchLocationsUseCaseProtocol.swift in Sources */,
@@ -523,7 +536,10 @@
 				863D33312F52E28200C49DD1 /* LocationResponseDTO.swift in Sources */,
 				863B19982F50F5B2002922E0 /* Wikipedia_place_app_testApp.swift in Sources */,
 				863D33712F531E0300C49DD1 /* CustomLocationView.swift in Sources */,
+				863D337A2F5444EE00C49DD1 /* Dependencies.swift in Sources */,
+				863D337C2F54478D00C49DD1 /* DeeplinkService.swift in Sources */,
 				863B19AA2F50F698002922E0 /* NetworkServiceConfiguration.swift in Sources */,
+				863D337F2F544F4200C49DD1 /* Coordinates.swift in Sources */,
 				863B19B82F50FBFC002922E0 /* NetworkError.swift in Sources */,
 				863D33452F52EB4700C49DD1 /* FetchLocationsUseCase.swift in Sources */,
 				863B19B02F50F824002922E0 /* NetworkRouter.swift in Sources */,

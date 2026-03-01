@@ -14,13 +14,16 @@ struct LocationCoordinator: View {
     
     private let fetchLocationUseCase: FetchLocationsUseCaseProtocol
     private let addCustomLocationUseCase: AddCustomLocationUseCaseProtocol
+    private let deeplinkServiceHandler: WikipediaDeeplinkServiceProtocol
     
     init(
         fetchLocationUseCase: FetchLocationsUseCaseProtocol,
-        addCustomLocationUseCase: AddCustomLocationUseCaseProtocol
+        addCustomLocationUseCase: AddCustomLocationUseCaseProtocol,
+        deeplinkServiceHandler: WikipediaDeeplinkServiceProtocol
     ) {
         self.fetchLocationUseCase = fetchLocationUseCase
         self.addCustomLocationUseCase = addCustomLocationUseCase
+        self.deeplinkServiceHandler = deeplinkServiceHandler
         self._viewModel = StateObject(wrappedValue: LocationViewModel(fetchLocationsUseCase: fetchLocationUseCase))
 
     }
@@ -33,7 +36,12 @@ struct LocationCoordinator: View {
     
     private var locationView: some View {
         LocationView(
-            viewModel: viewModel
+            viewModel: viewModel,
+            onLocationTap: { location in
+                Task {
+                    try await deeplinkServiceHandler.openWikipedia(for: location)
+                }
+            }
         )
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {

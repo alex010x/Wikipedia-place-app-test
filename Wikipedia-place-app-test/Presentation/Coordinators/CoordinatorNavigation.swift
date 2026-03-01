@@ -5,10 +5,6 @@
 //  Created by Alessandro Minopoli on 28/02/26.
 //
 
-protocol CoordinatorNavigation: AnyObject {
-    func navigate(to destination: any Destination)
-}
-
 protocol Destination: Identifiable, Hashable {
     var id: String { get }
 }

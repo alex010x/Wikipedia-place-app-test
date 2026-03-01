@@ -13,13 +13,17 @@ struct Wikipedia_place_app_testApp: App {
     private let coordinator: LocationCoordinator
     
     init() {
+        let dependencies = AppDependencies.makeDefault()
+        
         let repository = LocationRepository(
-            networkService: NetworkServiceFactory.createNetworkService(),
-            customLocationCache: CustomCache()
+            networkService: dependencies.networkService,
+            customLocationCache: dependencies.cache,
         )
+        
         coordinator = LocationCoordinator(
             fetchLocationUseCase: FetchLocationsUseCase(repository: repository),
-            addCustomLocationUseCase: AddCustomLocationUseCase(repository: repository)
+            addCustomLocationUseCase: AddCustomLocationUseCase(repository: repository),
+            deeplinkServiceHandler: dependencies.deeplinkHandler
         )
     }
     

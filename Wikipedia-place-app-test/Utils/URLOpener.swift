@@ -10,13 +10,13 @@ import SwiftUI
 
 @MainActor
 protocol URLOpenerProtocol {
-    func open(_ url: URL) async
+    func open(_ url: URL) async -> Bool
     func canOpen(_ url: URL) -> Bool
 }
 
 struct URLOpener: URLOpenerProtocol {
     
-    func open(_ url: URL) async {
+    func open(_ url: URL) async -> Bool {
         await UIApplication.shared.open(url)
     }
     
