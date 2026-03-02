@@ -35,10 +35,12 @@ Each screen has a dedicated ViewModel marked @MainActor that owns the business l
 All dependencies are composed at the app entry point in WikipediaPlaceApp and injected top-down. No singletons are used except URLSession.shared as the default session.
 
 ## Testability
-All use cases, services, and repositories are hidden behind protocols.
-URLSession is abstracted via `URLSessionDataProtocol` to allow mock network responses in unit tests
+All use cases, services, and repositories are hidden behind protocols. URLSession is abstracted via `URLSessionDataProtocol` to allow mock network responses in unit tests.
+
 `LocationCoordinator`, ViewModels, UseCases, Repositories, `ErrorHandler`, `DeeplinkService` and `NavigationController` all have dedicated unit test suites.
+
 The coordinator ensures navigation logic is testable without involving any SwiftUI views.
+
 Two separate entry points are defined: one for the app and one for the test suite. This prevents the app from launching during test execution and ensures accurate code coverage tracking.
 
 ## Accessibility
