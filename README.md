@@ -23,9 +23,13 @@ Navigation is fully decoupled from the view layer.
 Each screen has a dedicated ViewModel marked @MainActor that owns the business logic and exposes state via @Published properties.
 
 Clean Architecture
+
 Domain: use case protocols and the Location model
+
 Data: LocationRepository coordinates between the remote network service and the local cache, DTO models
+
 Presentation: ViewModels consume use cases via protocol injection
+
 Network: Network layer
 
 ## Actor-based Cache
