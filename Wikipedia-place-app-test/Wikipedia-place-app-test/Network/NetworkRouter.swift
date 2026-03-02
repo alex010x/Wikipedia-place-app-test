@@ -26,7 +26,7 @@ final class NetworkRouter: RouterProtocol {
         
         if let httpURLResponse = response as? HTTPURLResponse {
             // Only HTTP responses carry a status code; non-HTTP responses are treated as valid.
-            if !(200..<300 ~= httpURLResponse.statusCode) {
+            if !(200..<300 ~= httpURLResponse.statusCode) { // if not between 200 and 299
                 throw NetworkError.invalidResponse
             }
         }
