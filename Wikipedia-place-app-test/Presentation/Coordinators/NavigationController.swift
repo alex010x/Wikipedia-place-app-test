@@ -8,6 +8,8 @@
 import SwiftUI
 import Combine
 
+///Hosts the navigation path
+///
 @MainActor
 final class NavigationController: ObservableObject {
     @Published var navigationPath = NavigationPath()
