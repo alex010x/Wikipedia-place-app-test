@@ -45,10 +45,7 @@ Created 2 different entry points for the app, to avoid real app running when exe
 All interactive elements expose accessibilityLabel and accessibilityHint for VoiceOver. Some error states post AccessibilityNotification.Announcement to notify screen reader users immediately.
 
 ## Deeplinking
-Tapping a location opens the Wikipedia app via the `wikipedia://places` deep link, passing 
-the coordinates as a `WMFPlacesCoordinates` query item. The coordinates are JSON-encoded 
-before being appended to the URL, as the Wikipedia app expects a JSON string that it decodes 
-back into a `Coordinate` type on its end.
+Tapping a location opens the Wikipedia app via the `wikipedia://places` deep link, passing the coordinates as a `WMFPlacesCoordinates` query item. The coordinates are JSON-encoded before being appended to the URL, as the Wikipedia app was modified to expect a JSON string that it then decodes back into a `Coordinate` type on its end.
 
 ## Tech Stack
 - Swift 6
