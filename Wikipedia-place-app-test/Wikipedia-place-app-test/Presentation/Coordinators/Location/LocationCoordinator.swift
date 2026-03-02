@@ -4,7 +4,7 @@ import SwiftUI
 import Combine
 
 final class LocationCoordinator: Coordinator {
-    typealias Route = Never
+    typealias Route = Never // no navigation from here
 
     let navigationController = NavigationController() // first coordinator on the stack
     @Published var sheet: LocationCoordinatorSheet?

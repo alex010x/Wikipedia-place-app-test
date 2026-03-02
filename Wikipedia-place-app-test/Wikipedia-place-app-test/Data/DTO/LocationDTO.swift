@@ -5,9 +5,7 @@
 //  Created by Alessandro Minopoli on 28/02/26.
 //
 
-protocol DTOProtocol: Decodable {}
-
-struct LocationDTO: DTOProtocol {
+struct LocationDTO: Decodable {
     let name: String?
     let latitude: Double
     let longitude: Double

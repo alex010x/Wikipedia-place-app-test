@@ -8,6 +8,7 @@
 @testable import Wikipedia_place_app_test
 import XCTest
 
+@MainActor
 final class LocationTests: XCTestCase {
     
     func testViewNameMappedCorrectlyFromName() {

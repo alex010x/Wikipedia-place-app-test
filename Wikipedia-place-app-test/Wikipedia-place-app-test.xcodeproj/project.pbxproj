@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		863B19962F50F5B2002922E0 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B198C2F50F5B2002922E0 /* AppConfig.swift */; };
 		863B19982F50F5B2002922E0 /* Wikipedia_place_app_testApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19942F50F5B2002922E0 /* Wikipedia_place_app_testApp.swift */; };
-		863B19992F50F5B2002922E0 /* Config-Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 863B198D2F50F5B2002922E0 /* Config-Debug.xcconfig */; };
-		863B199A2F50F5B2002922E0 /* Config-Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 863B198E2F50F5B2002922E0 /* Config-Release.xcconfig */; };
 		863B199B2F50F5B2002922E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 863B19912F50F5B2002922E0 /* Assets.xcassets */; };
 		863B19A32F50F5C4002922E0 /* Wikipedia_place_app_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19A02F50F5C4002922E0 /* Wikipedia_place_app_testUITests.swift */; };
 		863B19A42F50F5C4002922E0 /* Wikipedia_place_app_testUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863B19A12F50F5C4002922E0 /* Wikipedia_place_app_testUITestsLaunchTests.swift */; };
@@ -675,7 +673,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2620;
-				LastUpgradeCheck = 2620;
+				LastUpgradeCheck = 2630;
 				TargetAttributes = {
 					863B18EE2F50EBDD002922E0 = {
 						CreatedOnToolsVersion = 26.2;
@@ -716,8 +714,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				863B19992F50F5B2002922E0 /* Config-Debug.xcconfig in Resources */,
-				863B199A2F50F5B2002922E0 /* Config-Release.xcconfig in Resources */,
 				863B199B2F50F5B2002922E0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -899,6 +895,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -956,6 +953,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -989,7 +987,7 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1022,7 +1020,7 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

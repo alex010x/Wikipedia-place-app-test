@@ -9,6 +9,7 @@ import XCTest
 import Combine
 @testable import Wikipedia_place_app_test
 
+@MainActor
 final class ErrorHandlerTests: XCTestCase {
     
     var sut: ErrorHandler!
