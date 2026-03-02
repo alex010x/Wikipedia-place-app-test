@@ -14,7 +14,7 @@ The project follows MVVM with a Coordinator pattern for navigation, Clean Archit
 ## Coordinator Pattern
 Navigation is fully decoupled from the view layer.
 
-`Coordinator` is a generic protocol requiring a Route type, a rootView, a coordinate method for navigation purposes and a NavigationController. In this specific project I extended coordinator with `Route == Never` as there's no navigation, but added it anyway to show the expected usage of the pattern.
+`Coordinator` is a generic protocol requiring a `Route` type, a `rootView`, a `coordinate(_ route: Route) -> Destination` method for navigation purposes and a `NavigationController`. In this specific project I extended coordinator with `Route == Never` as there's no navigation, but added it anyway to show the expected usage of the pattern.
 `CoordinatedView` is a thin generic SwiftUI wrapper that binds the coordinator's NavigationPath to a NavigationStack
 `NavigationController` is a separate ObservableObject that encapsulates the NavigationPath, designed to be shared across parent/child coordinators.
 `LocationCoordinator` owns the `LocationViewModel` lifecycle, handles sheet presentation, and manages deeplink errors
