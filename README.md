@@ -22,15 +22,11 @@ Navigation is fully decoupled from the view layer.
 ## MVVM
 Each screen has a dedicated ViewModel marked @MainActor that owns the business logic and exposes state via @Published properties.
 
-Clean Architecture
-
-Domain: use case protocols and the Location model
-
-Data: LocationRepository coordinates between the remote network service and the local cache, DTO models
-
-Presentation: ViewModels consume use cases via protocol injection
-
-Network: Network layer
+## Clean Architecture
+- **Domain**: use case protocols and the `Location` model
+- **Data**: `LocationRepository` coordinates between the remote network service and the 
+  local cache. It is injected with a `NetworkServiceProtocol` whose implementation delegates actual requests to a `RouterProtocol`, keeping the network details hidden from the repository.
+- **Presentation**: ViewModels consume use cases via protocol injection
 
 ## Actor-based Cache
 CustomLocationCache is implemented as a Swift actor to guarantee thread-safe access to the in-memory storage without explicit locking. This allows serialized access to it.
