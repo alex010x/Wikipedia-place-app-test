@@ -29,7 +29,7 @@ Each screen has a dedicated ViewModel marked @MainActor that owns the business l
 - **Presentation**: ViewModels consume use cases via protocol injection
 
 ## Actor-based Cache
-CustomLocationCache is implemented as a Swift actor to guarantee thread-safe access to the in-memory storage without explicit locking. This allows serialized access to it.
+`CustomLocationCache` is implemented as a Swift actor to guarantee thread-safe access to the in-memory storage without explicit locking. This allows serialized access to it.
 
 ## Dependency Injection
 All dependencies are composed at the app entry point in WikipediaPlaceApp and injected top-down. No singletons are used except URLSession.shared as the default session.
@@ -39,7 +39,7 @@ All use cases, services, and repositories are hidden behind protocols.
 URLSession is abstracted via `URLSessionDataProtocol` to allow mock network responses in unit tests
 `LocationCoordinator`, ViewModels, UseCases, Repositories, `ErrorHandler`, `DeeplinkService` and `NavigationController` all have dedicated unit test suites.
 The coordinator ensures navigation logic is testable without involving any SwiftUI views.
-Created 2 different entry points for the app, to avoid real app running when executing tests. This, not only is necessary, but also allows to track properly the coverage.
+Two separate entry points are defined: one for the app and one for the test suite. This prevents the app from launching during test execution and ensures accurate code coverage tracking.
 
 ## Accessibility
 All interactive elements expose accessibilityLabel and accessibilityHint for VoiceOver. Some error states post AccessibilityNotification.Announcement to notify screen reader users immediately.
