@@ -6,7 +6,7 @@ AMRO-Bank test - Wikipedia app deeplinking
 This app displays a list of geographic locations fetched from a remote service. Users can add custom locations, which are persisted locally in an in-memory cache. Tapping a location opens the Wikipedia app via deep link, showing the selected place on the map.
 
 ## Architecture
-The project follows MVVM with a Coordinator pattern for navigation, Clean Architecture principles with the separation of presentation, domain, data and network layers, and Protocol-Oriented Programming throughout to maximize testability.
+The project follows MVVM with a Coordinator pattern for navigation, Clean Architecture principles with the separation of presentation, domain, data layers, and Protocol-Oriented Programming throughout to maximize testability.
 
 
 # Key Patterns & Decisions
